@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PJIntegrador.Classes
 {
-    public class Usuario
+    public class Funcionario
     {
 
     }
