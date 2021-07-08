@@ -1,20 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using PJIntegrador.Formulario;
 
 namespace PJIntegrador
 {
-    public partial class Form1 : Form
+    public partial class Principal : Form
     {
-        public Form1()
+        public Principal()
         {
             InitializeComponent();
+        }
+
+        private void bntCadastro_Click(object sender, EventArgs e)
+        {
+            PJIntegrador.Formulario.Servicos tt = new Servicos();
+
+            tt.Show();
         }
     }
 }
