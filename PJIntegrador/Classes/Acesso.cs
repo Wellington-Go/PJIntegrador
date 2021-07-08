@@ -8,38 +8,31 @@ namespace PJIntegrador.Classes
 {
     public class Acesso
     {
-        public int ID { get; set; } 
-        public string Cpf { get; set; }
+        public int ID { get; set; }
         public string Senha { get; set; }
-       
-       
-        
-
+        public string Cpf { get; set; }
         public Acesso()
         {
         }
-        public Acesso(string cpf,string senha)
-        { 
-            Cpf = cpf;
+        public Acesso(string senha, string cpf)
+        {
             Senha = senha;
-            
-           
-           
+            Cpf = cpf;
         }
-        public Acesso(int id,string senha, string tipo, string cpf, int idUsuario, int idCliente)
+        public Acesso(int id,string senha, string cpf)
         {
             this.ID = id;
-            Cpf = cpf;
             Senha = senha;
-            
-            
-            
+            Cpf = cpf;
         }
-        public void Logar()
+        public void Inserir()
         {
 
         }
-        
+        public void Consultar(int _id)
+        {
+            
+        }
 
 
     }

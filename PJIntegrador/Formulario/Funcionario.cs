@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace PJIntegrador.Formulario
 {
-    public partial class Servicos : Form
+    public partial class Funcionario : Form
     {
-        public Servicos()
+        public Funcionario()
         {
             InitializeComponent();
         }
 
         private void Servicos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

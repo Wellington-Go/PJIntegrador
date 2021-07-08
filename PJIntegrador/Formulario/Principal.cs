@@ -15,7 +15,7 @@ namespace PJIntegrador
 
         private void bntCadastro_Click(object sender, EventArgs e)
         {
-            PJIntegrador.Formulario.Servicos tt = new Servicos();
+            PJIntegrador.Formulario.Funcionario tt = new Funcionario();
 
             tt.Show();
         }
