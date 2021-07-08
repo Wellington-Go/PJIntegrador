@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Windows.Forms;
 using PJIntegrador.Formulario;
+using PJIntegrador.Classes;
 
 namespace PJIntegrador
 {
@@ -18,6 +17,17 @@ namespace PJIntegrador
             PJIntegrador.Formulario.Funcionario tt = new Funcionario();
 
             tt.Show();
+        }
+
+        private void bntLogin_Click(object sender, EventArgs e)
+        {
+            Acesso cs = new Acesso(0,txtCpf.Text,txtSenha.Text);
+            cs.Logar();
+            MessageBox.Show("Logado com sucesso");
+
+            PJIntegrador.Formulario.Servicos fm = new Formulario.Servicos();
+            fm.Show();
+            
         }
     }
 }

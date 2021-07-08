@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.bntLogin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,21 +38,21 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtCpf
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(86, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtCpf.BackColor = System.Drawing.Color.Silver;
+            this.txtCpf.Location = new System.Drawing.Point(86, 62);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(181, 22);
+            this.txtCpf.TabIndex = 0;
             // 
-            // textBox2
+            // txtSenha
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Silver;
-            this.textBox2.Location = new System.Drawing.Point(83, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 22);
-            this.textBox2.TabIndex = 2;
+            this.txtSenha.BackColor = System.Drawing.Color.Silver;
+            this.txtSenha.Location = new System.Drawing.Point(83, 123);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(181, 22);
+            this.txtSenha.TabIndex = 2;
             // 
             // bntLogin
             // 
@@ -64,6 +64,7 @@
             this.bntLogin.TabIndex = 6;
             this.bntLogin.Text = "Login";
             this.bntLogin.UseVisualStyleBackColor = false;
+            this.bntLogin.Click += new System.EventHandler(this.bntLogin_Click);
             // 
             // label2
             // 
@@ -91,8 +92,8 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.bntLogin);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtSenha);
+            this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -130,8 +131,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button bntLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

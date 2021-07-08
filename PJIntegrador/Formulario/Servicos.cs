@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PJIntegrador
+namespace PJIntegrador.Formulario
 {
-    public partial class Form1 : Form
+    public partial class Servicos : Form
     {
-        public Form1()
+        public Servicos()
         {
             InitializeComponent();
         }
