@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PJIntegrador.Classes;
 
 namespace PJIntegrador.Formulario
 {
@@ -25,6 +26,48 @@ namespace PJIntegrador.Formulario
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+            mskCpf.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals; // remove pontos e traços do cpf
+            Funcionario funcionario = new Funcionario(
+                txtNome.Text,
+                txtEmail.Text,
+                txttelefone.Text,
+                mskCpf.Text,
+                txtSenha.Text
+            );
+            funcionario.Inserir();
+            txtId.Text = funcionario.Id.ToString();
+            MessageBox.Show("Funcionario " + funcionario.Id + " inserir");
+            LimparCampos();
+        }
+
+        private void LimparCampos()
+        {
+            txtNome.Clear();
+            txtEmail.Clear();
+            txttelefone.Clear();
+            mskCpf.Clear();
+            txtSenha.Clear();
+        }
+        private void DesbloquearControles()
+        {
+            txtNome.Enabled = true;
+            txtEmail.Enabled = true;
+            txttelefone.Enabled = true;
+            mskCpf.Enabled = true;
+            txtSenha.Enabled = true;
+        }
+
+        private void BloquearControles()
+        {
+            txtNome.Enabled = false;
+            txtEmail.Enabled = false;
+            txttelefone.Enabled = false;
+            mskCpf.Enabled = false;
+            txtSenha.Enabled = false;
         }
     }
 }
