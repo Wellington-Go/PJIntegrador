@@ -10,30 +10,20 @@ namespace PJIntegrador.Classes
     {
         public int ID { get; set; }
         public string Senha { get; set; }
-        public string Tipo { get; set; }
         public string Cpf { get; set; }
-        public int IdUsuario { get; set; }
-        public int IdCliente { get; set; }
-
         public Acesso()
         {
         }
-        public Acesso(string senha, string tipo, string cpf, int idUsuario, int idCliente)
+        public Acesso(string senha, string cpf)
         {
             Senha = senha;
-            Tipo = tipo;
             Cpf = cpf;
-            IdUsuario = idUsuario;
-            IdCliente = idCliente;
         }
-        public Acesso(int id,string senha, string tipo, string cpf, int idUsuario, int idCliente)
+        public Acesso(int id,string senha, string cpf)
         {
             this.ID = id;
             Senha = senha;
-            Tipo = tipo;
             Cpf = cpf;
-            IdUsuario = idUsuario;
-            IdCliente = idCliente;
         }
         public void Inserir()
         {
