@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using MySql.Data.MySqlClient;
 
-namespace PJIntegrador.classes
+namespace PJIntegrador.Classes
 {
     public static class Banco // classse publica
     {
