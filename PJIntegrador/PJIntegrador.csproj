@@ -89,21 +89,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Acesso.cs" />
-    <Compile Include="Classes\Banco.cs" />
-    <Compile Include="Classes\Funcionario.cs" />
-    <Compile Include="Classes\Servicos.cs" />
+    <Compile Include="classes\Acesso.cs" />
+    <Compile Include="classes\Banco.cs" />
+    <Compile Include="classes\Funcionario.cs" />
+    <Compile Include="classes\Servicos.cs" />
     <Compile Include="Formulario\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formulario\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formulario\Funcionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formulario\Funcionario.Designer.cs">
-      <DependentUpon>Funcionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario\Servicos.cs">
       <SubType>Form</SubType>
@@ -111,13 +105,19 @@
     <Compile Include="Formulario\Servicos.Designer.cs">
       <DependentUpon>Servicos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulario\frmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\frmFuncionario.Designer.cs">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formulario\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario\Funcionario.resx">
-      <DependentUpon>Funcionario.cs</DependentUpon>
+    <EmbeddedResource Include="Formulario\frmFuncionario.resx">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

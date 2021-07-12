@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PJIntegrador.Classes;
 
-namespace PJIntegrador.Classes
+namespace PJIntegrador.classes
 {
     public class Funcionario
     {
@@ -21,26 +21,27 @@ namespace PJIntegrador.Classes
         //=================================================construtor
         public Funcionario() { }
 
-        public Funcionario(string nome, string email, string telefone, string cPF, string senha, bool ativo = true)
+        public Funcionario(string nome, string email, string telefone, string cpf, string senha, bool ativo = true)
         {
             Nome = nome;
             Email = email;
             Telefone = telefone;
-            CPF = cPF;
+            CPF = cpf;
             Senha = senha;
             Ativo = ativo;
         }
 
-        public Funcionario(int id, string nome, string email, string telefone, string cPF, string senha, bool ativo = true)
+        public Funcionario(int id, string nome, string email, string telefone, string cpf, string senha, bool ativo = true)
         {
             Id = id;
             Nome = nome;
             Email = email;
             Telefone = telefone;
-            CPF = cPF;
+            CPF = cpf;
             Senha = senha;
             Ativo = ativo;
         }
+
         //=================================================metodo
         public void Inserir()
         {
