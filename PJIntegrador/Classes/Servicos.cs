@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using PJIntegrador.Classes;
 
 namespace PJIntegrador.classes
 {
     public class Servicos
     {
-
         public int ID { get; set; }
         public string Descricao { get; set; }
         public double Valor { get; set; }
-
         public DateTime Data { get; set; }
-
         public int idServico { get; set; }
+        //=======================================================
 
         public Servicos()
         {
@@ -37,6 +37,18 @@ namespace PJIntegrador.classes
             Data = data;
             this.idServico = idServico;
         }
+        //=====================================================
+        public void Inserir()
+        {
+            var cmd = Banco.Abrir();
+            if (cmd.Connection.State == System.Data.ConnectionState.Open)
+            {
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "";
 
+                cmd.ExecuteNonQuery();
+                cmd.CommandText = "select @@identity";
+            }
+        }
     }
 }
