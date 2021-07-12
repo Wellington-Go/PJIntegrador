@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using PJIntegrador.classes;
 
@@ -28,7 +21,6 @@ namespace PJIntegrador
                 mskCpf.Text
             );
             form.Inserir();
-            txtId.Text = form.Id.ToString();
             MessageBox.Show("Funcionario " + form.Id + " inserir!");
             LimparCampos();
         }
@@ -44,23 +36,6 @@ namespace PJIntegrador
             txtSenha.Clear();
             txttelefone.Clear();
             mskCpf.Clear();
-        }
-        private void DesbloquearControles()
-        {
-            txtNome.Enabled = true;
-            txtEmail.Enabled = true;
-            txtSenha.Enabled = true;
-            txttelefone.Enabled = true;
-            mskCpf.Enabled = true;
-        }
-
-        private void BloquearControles()
-        {
-            txtNome.Enabled = false;
-            txtEmail.Enabled = false;
-            txtSenha.Enabled = false;
-            txttelefone.Enabled = false;
-            mskCpf.Enabled = false;
         }
     }
 }
