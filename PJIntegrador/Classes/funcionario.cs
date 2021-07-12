@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using PJIntegrador.classes;
+using PJIntegrador.Classes;
 
 namespace PJIntegrador.classes
 {
@@ -22,26 +22,27 @@ namespace PJIntegrador.classes
         //=================================================construtor
         public Funcionario() { }
 
-        public Funcionario(string nome, string email, string telefone, string cPF, string senha, bool ativo)
+        public Funcionario(string nome, string email, string telefone, string cpf, string senha, bool ativo = true)
         {
             Nome = nome;
             Email = email;
             Telefone = telefone;
-            CPF = cPF;
+            CPF = cpf;
             Senha = senha;
             Ativo = ativo;
         }
 
-        public Funcionario(int id, string nome, string email, string telefone, string cPF, string senha, bool ativo)
+        public Funcionario(int id, string nome, string email, string telefone, string cpf, string senha, bool ativo = true)
         {
             Id = id;
             Nome = nome;
             Email = email;
             Telefone = telefone;
-            CPF = cPF;
+            CPF = cpf;
             Senha = senha;
             Ativo = ativo;
         }
+
         //=================================================metodo
         public void Inserir()
         {
@@ -58,9 +59,6 @@ namespace PJIntegrador.classes
             }
         }
         //=================================================Fim Inserir
-        public void BuscarPorId()
-        {
-
-        }
+        public void BuscarPorId() { }
     }
 }
