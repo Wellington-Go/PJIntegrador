@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 using PJIntegrador.Classes;
 
 namespace PJIntegrador.classes
@@ -58,9 +59,6 @@ namespace PJIntegrador.classes
             }
         }
         //=================================================Fim Inserir
-        public void BuscarPorId()
-        {
-
-        }
+        public void BuscarPorId() { }
     }
 }
