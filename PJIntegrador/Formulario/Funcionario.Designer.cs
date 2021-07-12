@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnListar = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ativo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnEditarAlterar = new System.Windows.Forms.Button();
             this.mskCpf = new System.Windows.Forms.MaskedTextBox();
             this.btnInserir = new System.Windows.Forms.Button();
@@ -49,12 +40,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ativo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.btnListar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -86,87 +86,6 @@
             this.groupBox1.Text = "groupBox1";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Nome,
-            this.Email,
-            this.Telefone,
-            this.CPF,
-            this.Senha,
-            this.Ativo});
-            this.dataGridView1.Location = new System.Drawing.Point(239, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(735, 352);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // btnListar
-            // 
-            this.btnListar.Location = new System.Drawing.Point(239, 12);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
-            this.btnListar.TabIndex = 2;
-            this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = true;
-            // 
-            // ID
-            // 
-            this.ID.Frozen = true;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 40;
-            // 
-            // Nome
-            // 
-            this.Nome.Frozen = true;
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            this.Nome.Width = 150;
-            // 
-            // Email
-            // 
-            this.Email.Frozen = true;
-            this.Email.HeaderText = "E-mail";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 150;
-            // 
-            // Telefone
-            // 
-            this.Telefone.Frozen = true;
-            this.Telefone.HeaderText = "Telefone";
-            this.Telefone.Name = "Telefone";
-            this.Telefone.ReadOnly = true;
-            // 
-            // CPF
-            // 
-            this.CPF.Frozen = true;
-            this.CPF.HeaderText = "CPF";
-            this.CPF.Name = "CPF";
-            this.CPF.ReadOnly = true;
-            // 
-            // Senha
-            // 
-            this.Senha.Frozen = true;
-            this.Senha.HeaderText = "Senha";
-            this.Senha.Name = "Senha";
-            this.Senha.ReadOnly = true;
-            // 
-            // Ativo
-            // 
-            this.Ativo.Frozen = true;
-            this.Ativo.HeaderText = "ativo";
-            this.Ativo.Name = "Ativo";
-            this.Ativo.ReadOnly = true;
-            this.Ativo.Width = 70;
-            // 
             // btnEditarAlterar
             // 
             this.btnEditarAlterar.Location = new System.Drawing.Point(90, 341);
@@ -175,6 +94,7 @@
             this.btnEditarAlterar.TabIndex = 34;
             this.btnEditarAlterar.Text = "&Editar";
             this.btnEditarAlterar.UseVisualStyleBackColor = true;
+            this.btnEditarAlterar.Click += new System.EventHandler(this.btnEditarAlterar_Click);
             // 
             // mskCpf
             // 
@@ -260,6 +180,15 @@
             this.label5.TabIndex = 24;
             this.label5.Text = "Telefone:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 269);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "senha:";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -302,14 +231,86 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "ID:";
             // 
-            // label4
+            // dataGridView1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 269);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "senha:";
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nome,
+            this.Email,
+            this.Telefone,
+            this.CPF,
+            this.Senha,
+            this.Ativo});
+            this.dataGridView1.Location = new System.Drawing.Point(239, 41);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(735, 352);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // ID
+            // 
+            this.ID.Frozen = true;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 40;
+            // 
+            // Nome
+            // 
+            this.Nome.Frozen = true;
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 150;
+            // 
+            // Email
+            // 
+            this.Email.Frozen = true;
+            this.Email.HeaderText = "E-mail";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            this.Email.Width = 150;
+            // 
+            // Telefone
+            // 
+            this.Telefone.Frozen = true;
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
+            this.Telefone.ReadOnly = true;
+            // 
+            // CPF
+            // 
+            this.CPF.Frozen = true;
+            this.CPF.HeaderText = "CPF";
+            this.CPF.Name = "CPF";
+            this.CPF.ReadOnly = true;
+            // 
+            // Senha
+            // 
+            this.Senha.Frozen = true;
+            this.Senha.HeaderText = "Senha";
+            this.Senha.Name = "Senha";
+            this.Senha.ReadOnly = true;
+            // 
+            // Ativo
+            // 
+            this.Ativo.Frozen = true;
+            this.Ativo.HeaderText = "ativo";
+            this.Ativo.Name = "Ativo";
+            this.Ativo.ReadOnly = true;
+            this.Ativo.Width = 70;
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(239, 12);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 2;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
             // 
             // Funcionario
             // 

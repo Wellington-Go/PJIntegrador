@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using PJIntegrador.Formulario;
-using PJIntegrador.Classes;
+using PJIntegrador.classes;
 
 namespace PJIntegrador
 {
@@ -14,20 +13,49 @@ namespace PJIntegrador
 
         private void bntCadastro_Click(object sender, EventArgs e)
         {
-            PJIntegrador.Formulario.Funcionario tt = new Funcionario();
+           /* PJIntegrador.Formulario.Funcionario tt = new Funcionario();
 
-            tt.Show();
+            tt.Show();*/
         }
 
         private void bntLogin_Click(object sender, EventArgs e)
         {
-            Acesso cs = new Acesso(0,txtCpf.Text,txtSenha.Text);
-            cs.Logar();
-            MessageBox.Show("Logado com sucesso");
+            if (txtCpf.Text == string.Empty ) 
+            {
+                MessageBox.Show("CPF e Senha precisa ser informado !");
+                txtCpf.Focus();
+                return;
+            }
+            else if (txtSenha.Text == string.Empty)
+            {
+                MessageBox.Show("CPF e Senha precisa ser informado !");
+                txtSenha.Focus();
+                return;
+            }
+            else
+            {
+                 Acesso cs = new Acesso(txtCpf.Text, txtSenha.Text);
+                cs.Logar();
+                MessageBox.Show("Logado com sucesso");
+                Formulario.Servicos fm = new Formulario.Servicos();
+                fm.Show(); 
+            }
 
-            PJIntegrador.Formulario.Servicos fm = new Formulario.Servicos();
-            fm.Show();
+           
             
+        }
+
+        private void txtCpf_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+            // The password character is an asterisk.
+            txtSenha.PasswordChar = '*';
+            // The control will allow no more than 14 characters.
+            txtSenha.MaxLength = 14;
         }
     }
 }

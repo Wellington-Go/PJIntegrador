@@ -1,8 +1,6 @@
-﻿
+﻿using MySql.Data.MySqlClient;
 
-using PJIntegrador.classes;
-
-namespace PJIntegrador.Classes
+namespace PJIntegrador.classes
 {
     public class Acesso
     {   /* paramentros*/
@@ -10,19 +8,19 @@ namespace PJIntegrador.Classes
         public int Id { get; set; } 
         public string Cpf { get; set; }
         public string Senha { get; set; }
-        public int idUsuario { get { return idUsuario; } }
-        public int idCliente { get { return idCliente; } }
+        /*public int idUsuario { get; set; }
+        public int idCliente { get; set; }*/
         
 
         // criaçao do métodos
 
-        public Acesso(int id,string senha, string cpf, int idUsuario,int idCliente)
+        public Acesso(int id,string senha, string cpf)
         {
             this.Id = id;
             Cpf = cpf;
             Senha = senha;
-            idUsuario = idUsuario;
-            idCliente = idCliente;
+            /*this.idUsuario = idUsuario;
+            this.idCliente = idCliente;*/
 
         } 
         public Acesso(string cpf, string senha)
@@ -47,8 +45,8 @@ namespace PJIntegrador.Classes
             cmd.ExecuteNonQuery();
             cmd = new MySqlCommand("select max(id) from cadastro",cmd.Connection);
             Id = (int)cmd.ExecuteScalar();
-            idUsuario = (int)cmd.ExecuteScalar();
-            idCliente = (int)cmd.ExecuteScalar();
+            /*idUsuario = (int)cmd.ExecuteScalar();
+            idCliente = (int)cmd.ExecuteScalar();*/
 
 
 

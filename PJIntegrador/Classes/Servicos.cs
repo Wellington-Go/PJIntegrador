@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PJIntegrador.Classes
+namespace PJIntegrador.classes
 {
     public class Servicos
     {

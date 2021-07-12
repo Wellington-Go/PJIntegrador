@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PJIntegrador.Classes;
+using MySql.Data.MySqlClient;
+using PJIntegrador.classes;
 
-namespace PJIntegrador.Classes
+namespace PJIntegrador.classes
 {
     public class Funcionario
     {
@@ -21,7 +22,7 @@ namespace PJIntegrador.Classes
         //=================================================construtor
         public Funcionario() { }
 
-        public Funcionario(string nome, string email, string telefone, string cPF, string senha, bool ativo = true)
+        public Funcionario(string nome, string email, string telefone, string cPF, string senha, bool ativo)
         {
             Nome = nome;
             Email = email;
@@ -31,7 +32,7 @@ namespace PJIntegrador.Classes
             Ativo = ativo;
         }
 
-        public Funcionario(int id, string nome, string email, string telefone, string cPF, string senha, bool ativo = true)
+        public Funcionario(int id, string nome, string email, string telefone, string cPF, string senha, bool ativo)
         {
             Id = id;
             Nome = nome;

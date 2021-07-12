@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using MySql.Data.MySqlClient;
 
-namespace PJIntegrador.Classes
+namespace PJIntegrador.classes
 {
     public static class Banco // classse publica
     {
@@ -14,7 +14,7 @@ namespace PJIntegrador.Classes
         public static MySqlCommand Abrir()
         {
             MySqlCommand cmd = new MySqlCommand();
-            string strConn = @"server=127.0.0.1;database=bancoapi;user id=root;password=usbw;port=3307";
+            string strConn = @"server=127.0.0.1;database=bancoapi;user id=root;password=usbw;port=3306";
             MySqlConnection cn = new MySqlConnection(strConn);
             try // tratamento de exceções do C#
             {
