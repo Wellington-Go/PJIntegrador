@@ -55,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 76);
+            this.label2.Location = new System.Drawing.Point(112, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 1;
@@ -64,7 +64,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 127);
+            this.label3.Location = new System.Drawing.Point(218, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 2;
@@ -73,7 +73,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 178);
+            this.label4.Location = new System.Drawing.Point(324, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
             this.label4.TabIndex = 3;
@@ -82,7 +82,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 229);
+            this.label5.Location = new System.Drawing.Point(427, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 13);
             this.label5.TabIndex = 4;
@@ -103,35 +103,35 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(376, 306);
+            this.groupBox1.Size = new System.Drawing.Size(536, 102);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Serviço";
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(9, 194);
+            this.txtData.Location = new System.Drawing.Point(327, 41);
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(100, 20);
             this.txtData.TabIndex = 11;
             // 
             // txtIdAcesso
             // 
-            this.txtIdAcesso.Location = new System.Drawing.Point(9, 245);
+            this.txtIdAcesso.Location = new System.Drawing.Point(430, 41);
             this.txtIdAcesso.Name = "txtIdAcesso";
             this.txtIdAcesso.Size = new System.Drawing.Size(100, 20);
             this.txtIdAcesso.TabIndex = 10;
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(9, 143);
+            this.txtValor.Location = new System.Drawing.Point(221, 41);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 8;
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(9, 92);
+            this.txtDescricao.Location = new System.Drawing.Point(115, 41);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(100, 20);
             this.txtDescricao.TabIndex = 7;
@@ -145,7 +145,7 @@
             // 
             // btnInserir
             // 
-            this.btnInserir.Location = new System.Drawing.Point(9, 277);
+            this.btnInserir.Location = new System.Drawing.Point(9, 67);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(75, 23);
             this.btnInserir.TabIndex = 5;
@@ -157,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 335);
+            this.ClientSize = new System.Drawing.Size(559, 124);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmServicos";
             this.Text = "Servicos";
