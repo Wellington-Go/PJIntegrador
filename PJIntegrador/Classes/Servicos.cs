@@ -14,30 +14,32 @@ namespace PJIntegrador.classes
         public string Descricao { get; set; }
         public double Valor { get; set; }
         public DateTime Data { get; set; }
-        public int idServico { get; set; }
-        public int idFuncionario { get; set; }
-
+        public int IdAcesso { get; set; }
+        public int IdCliente { get; set; }
+        public int IdFuncionario { get; set; }
         //=======================================================
 
-        public Servicos()
-        {
-        }
+        public Servicos() { }
 
-        public Servicos(string descricao, double valor, DateTime data, int idServico)
+        public Servicos(string descricao, double valor, DateTime data, int idServico, int idCliente, int idFuncionario)
         {
             Descricao = descricao;
             Valor = valor;
             Data = data;
-            this.idServico = idServico;
+            this.IdAcesso = idServico;
+            this.IdCliente = idCliente;
+            this.IdFuncionario = idFuncionario;
         }
 
-        public Servicos(int iD, string descricao, double valor, DateTime data, int idServico)
+        public Servicos(int iD, string descricao, double valor, DateTime data, int idServico, int idCliente, int idFuncionario)
         {
             ID = iD;
             Descricao = descricao;
             Valor = valor;
             Data = data;
-            this.idServico = idServico;
+            this.IdAcesso = idServico;
+            this.IdCliente = idCliente;
+            this.IdFuncionario = idFuncionario;
         }
         //=====================================================
         public void Inserir()
