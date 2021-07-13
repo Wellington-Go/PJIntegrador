@@ -18,25 +18,79 @@ namespace PJIntegrador.Formulario
             InitializeComponent();
         }
 
-        private void btninserir_Click(object sender, EventArgs e)
-        {
-            Servicos servicos = new Servicos(
-                
-                txtDescricao.Text,
-                Convert.ToDouble(txtValor),
-                Convert.ToDateTime(txtData.Text),
-                Convert.ToInt32(txtIdAcesso)
-            );
-            servicos.Inserir();
-            MessageBox.Show("Serviço " + servicos.ID + " inserir!");
-            LimparCampos();
-        }
         private void LimparCampos()
         {
             txtDescricao.Clear();
             txtValor.Clear();
             txtData.Clear();
             txtIdAcesso.Clear();
+        }
+
+        private void frmServicos_Load(object sender, EventArgs e)
+        {
+            /*----------------------------------------------
+             Rotina:
+             data:
+             Autor:
+             objetivo:
+             
+             */
+            
+            string query = "select * from cliente order by nome ";
+            var cmd = Banco.Abrir();
+            cmd.CommandText = query;
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cmbCliente.Items.Add(dr.GetString(1));
+            }
+
+            /*----------------------------------------------
+            Rotina:
+            data:
+            Autor:
+            objetivo:
+
+            */
+
+            
+            string sql = "select * from funcionario order by nome ";
+            var cd = Banco.Abrir();
+            cd.CommandText = sql;
+            var ds = cd.ExecuteReader();
+            while (ds.Read())
+            {
+                cmbFun.Items.Add(ds.GetString(1));
+            }
+        }
+
+        private void cmbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string query = "select * from cliente where nome = '"+cmbCliente.Text+"' ";
+            var cmd = Banco.Abrir();
+            cmd.CommandText = query;
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                //cmbCliente.Items.Add(dr.GetString(1));
+                label6.Text= Convert.ToString(dr.GetInt32(0));
+            }
+        }
+
+        private void cmbCliente_Click(object sender, EventArgs e)
+        { }
+
+        private void cmbFun_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string query = "select * from funcionario where nome = '" + cmbFun.Text + "' ";
+            var cmd = Banco.Abrir();
+            cmd.CommandText = query;
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                //cmbCliente.Items.Add(dr.GetString(1));
+                label7.Text = Convert.ToString(dr.GetInt32(0));
+            }
         }
     }
 }

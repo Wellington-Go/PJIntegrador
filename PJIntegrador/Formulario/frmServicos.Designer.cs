@@ -34,12 +34,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtData = new System.Windows.Forms.TextBox();
             this.txtIdAcesso = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.btninserir = new System.Windows.Forms.Button();
-            this.txtData = new System.Windows.Forms.TextBox();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.cmbFun = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,12 +93,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.cmbFun);
+            this.groupBox1.Controls.Add(this.cmbCliente);
             this.groupBox1.Controls.Add(this.txtData);
             this.groupBox1.Controls.Add(this.txtIdAcesso);
             this.groupBox1.Controls.Add(this.txtValor);
             this.groupBox1.Controls.Add(this.txtDescricao);
             this.groupBox1.Controls.Add(this.txtId);
-            this.groupBox1.Controls.Add(this.btninserir);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
@@ -103,10 +109,17 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(376, 306);
+            this.groupBox1.Size = new System.Drawing.Size(376, 280);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Serviço";
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(9, 194);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(100, 20);
+            this.txtData.TabIndex = 11;
             // 
             // txtIdAcesso
             // 
@@ -136,31 +149,54 @@
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 6;
             // 
-            // btninserir
+            // cmbCliente
             // 
-            this.btninserir.Location = new System.Drawing.Point(9, 277);
-            this.btninserir.Name = "btninserir";
-            this.btninserir.Size = new System.Drawing.Size(75, 23);
-            this.btninserir.TabIndex = 5;
-            this.btninserir.Text = "Inserir";
-            this.btninserir.UseVisualStyleBackColor = true;
-            this.btninserir.Click += new System.EventHandler(this.btninserir_Click);
+            this.cmbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(161, 40);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(85, 21);
+            this.cmbCliente.TabIndex = 12;
+            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
+            this.cmbCliente.Click += new System.EventHandler(this.cmbCliente_Click);
             // 
-            // txtData
+            // cmbFun
             // 
-            this.txtData.Location = new System.Drawing.Point(9, 194);
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(100, 20);
-            this.txtData.TabIndex = 11;
+            this.cmbFun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFun.FormattingEnabled = true;
+            this.cmbFun.Location = new System.Drawing.Point(161, 92);
+            this.cmbFun.Name = "cmbFun";
+            this.cmbFun.Size = new System.Drawing.Size(85, 21);
+            this.cmbFun.TabIndex = 13;
+            this.cmbFun.SelectedIndexChanged += new System.EventHandler(this.cmbFun_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(252, 44);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Cliente:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(252, 95);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Funcionario:";
             // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 335);
+            this.ClientSize = new System.Drawing.Size(404, 306);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmServicos";
             this.Text = "Servicos";
+            this.Load += new System.EventHandler(this.frmServicos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -179,7 +215,10 @@
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Button btninserir;
         private System.Windows.Forms.TextBox txtData;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbFun;
+        private System.Windows.Forms.ComboBox cmbCliente;
     }
 }

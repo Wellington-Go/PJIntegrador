@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using PJIntegrador.Classes;
+using PJIntegrador.classes;
 
 namespace PJIntegrador.classes
 {
@@ -15,6 +15,8 @@ namespace PJIntegrador.classes
         public double Valor { get; set; }
         public DateTime Data { get; set; }
         public int idServico { get; set; }
+        public int idFuncionario { get; set; }
+
         //=======================================================
 
         public Servicos()
