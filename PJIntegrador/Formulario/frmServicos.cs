@@ -24,7 +24,9 @@ namespace PJIntegrador.Formulario
                 txtDescricao.Text,
                 Convert.ToDouble(txtValor),
                 Convert.ToDateTime(txtData.Text),
-                Convert.ToInt32(txtIdAcesso)
+                Convert.ToInt32(txtIdAcesso),
+                Convert.ToInt32(txtIdCliente),
+                Convert.ToInt32(txtIdFuncionario)
             );
             servicos.Inserir();
             MessageBox.Show("Serviço " + servicos.ID + " inserir!");
@@ -37,6 +39,8 @@ namespace PJIntegrador.Formulario
             txtValor.Clear();
             txtData.Clear();
             txtIdAcesso.Clear();
+            txtIdCliente.Clear();
+            txtIdFuncionario.Clear();
         }
     }
 }

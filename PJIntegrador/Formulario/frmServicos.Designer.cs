@@ -40,6 +40,10 @@
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnInserir = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.txtIdFuncionario = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +94,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtIdFuncionario);
+            this.groupBox1.Controls.Add(this.txtIdCliente);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtData);
             this.groupBox1.Controls.Add(this.txtIdAcesso);
             this.groupBox1.Controls.Add(this.txtValor);
@@ -103,7 +111,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(536, 102);
+            this.groupBox1.Size = new System.Drawing.Size(540, 154);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Serviço";
@@ -145,7 +153,7 @@
             // 
             // btnInserir
             // 
-            this.btnInserir.Location = new System.Drawing.Point(9, 67);
+            this.btnInserir.Location = new System.Drawing.Point(9, 117);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(75, 23);
             this.btnInserir.TabIndex = 5;
@@ -153,11 +161,43 @@
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Id do Cliente:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(112, 75);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Id do Funcionario:";
+            // 
+            // txtIdCliente
+            // 
+            this.txtIdCliente.Location = new System.Drawing.Point(9, 91);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtIdCliente.TabIndex = 14;
+            // 
+            // txtIdFuncionario
+            // 
+            this.txtIdFuncionario.Location = new System.Drawing.Point(115, 91);
+            this.txtIdFuncionario.Name = "txtIdFuncionario";
+            this.txtIdFuncionario.Size = new System.Drawing.Size(100, 20);
+            this.txtIdFuncionario.TabIndex = 15;
+            // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 124);
+            this.ClientSize = new System.Drawing.Size(563, 175);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmServicos";
             this.Text = "Servicos";
@@ -181,5 +221,9 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.TextBox txtData;
+        private System.Windows.Forms.TextBox txtIdFuncionario;
+        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
