@@ -10,6 +10,7 @@ namespace PJIntegrador.classes
 {
     public class Funcionario
     {
+        public string msg;
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
@@ -58,6 +59,21 @@ namespace PJIntegrador.classes
             }
         }
         //=================================================Fim Inserir
-        public void BuscarPorId() { }
+        public void BuscarFun(string _cpf, string _senha)
+           // SqlCommand cmd = new SqlCommand("SELECT * FROM Login WHERE User='" + txtUser.Text + "' AND Pass ='" + txtPass.Text + "'", con);
+        {
+            string query = "select * from funcionario where cpf = '" + _cpf + "' and senha = '" + _senha + "' ";
+            var cmd = Banco.Abrir();
+            cmd.CommandText = query;
+            var dr = cmd.ExecuteReader();
+            if (dr.HasRows)
+            {
+                msg = "Sim";
+            }
+            else
+            {
+                msg = "nao encontrado!";
+            }
+        }
     }
 }
