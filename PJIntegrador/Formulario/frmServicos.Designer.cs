@@ -34,12 +34,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtData = new System.Windows.Forms.TextBox();
             this.txtIdAcesso = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.btninserir = new System.Windows.Forms.Button();
-            this.txtData = new System.Windows.Forms.TextBox();
+            this.btnInserir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +95,7 @@
             this.groupBox1.Controls.Add(this.txtValor);
             this.groupBox1.Controls.Add(this.txtDescricao);
             this.groupBox1.Controls.Add(this.txtId);
-            this.groupBox1.Controls.Add(this.btninserir);
+            this.groupBox1.Controls.Add(this.btnInserir);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
@@ -107,6 +107,13 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Serviço";
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(9, 194);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(100, 20);
+            this.txtData.TabIndex = 11;
             // 
             // txtIdAcesso
             // 
@@ -136,22 +143,15 @@
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 6;
             // 
-            // btninserir
+            // btnInserir
             // 
-            this.btninserir.Location = new System.Drawing.Point(9, 277);
-            this.btninserir.Name = "btninserir";
-            this.btninserir.Size = new System.Drawing.Size(75, 23);
-            this.btninserir.TabIndex = 5;
-            this.btninserir.Text = "Inserir";
-            this.btninserir.UseVisualStyleBackColor = true;
-            this.btninserir.Click += new System.EventHandler(this.btninserir_Click);
-            // 
-            // txtData
-            // 
-            this.txtData.Location = new System.Drawing.Point(9, 194);
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(100, 20);
-            this.txtData.TabIndex = 11;
+            this.btnInserir.Location = new System.Drawing.Point(9, 277);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(75, 23);
+            this.btnInserir.TabIndex = 5;
+            this.btnInserir.Text = "Inserir";
+            this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // frmServicos
             // 
@@ -179,7 +179,7 @@
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Button btninserir;
+        private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.TextBox txtData;
     }
 }

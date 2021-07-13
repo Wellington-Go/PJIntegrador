@@ -14,7 +14,7 @@ namespace PJIntegrador.classes
         public string Descricao { get; set; }
         public double Valor { get; set; }
         public DateTime Data { get; set; }
-        public int idServico { get; set; }
+        public int IdAcesso { get; set; }
         //=======================================================
 
         public Servicos()
@@ -26,7 +26,7 @@ namespace PJIntegrador.classes
             Descricao = descricao;
             Valor = valor;
             Data = data;
-            this.idServico = idServico;
+            this.IdAcesso = idServico;
         }
 
         public Servicos(int iD, string descricao, double valor, DateTime data, int idServico)
@@ -35,7 +35,7 @@ namespace PJIntegrador.classes
             Descricao = descricao;
             Valor = valor;
             Data = data;
-            this.idServico = idServico;
+            this.IdAcesso = idServico;
         }
         //=====================================================
         public void Inserir()

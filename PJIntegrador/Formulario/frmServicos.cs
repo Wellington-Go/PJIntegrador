@@ -18,10 +18,9 @@ namespace PJIntegrador.Formulario
             InitializeComponent();
         }
 
-        private void btninserir_Click(object sender, EventArgs e)
+        private void btnInserir_Click(object sender, EventArgs e)
         {
             Servicos servicos = new Servicos(
-                
                 txtDescricao.Text,
                 Convert.ToDouble(txtValor),
                 Convert.ToDateTime(txtData.Text),
@@ -31,6 +30,7 @@ namespace PJIntegrador.Formulario
             MessageBox.Show("Serviço " + servicos.ID + " inserir!");
             LimparCampos();
         }
+
         private void LimparCampos()
         {
             txtDescricao.Clear();
