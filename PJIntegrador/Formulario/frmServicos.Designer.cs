@@ -40,13 +40,11 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvServicos = new System.Windows.Forms.DataGridView();
+            this.btnListar = new System.Windows.Forms.Button();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdFuncionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnListar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
             this.SuspendLayout();
@@ -164,17 +162,25 @@
             this.dgvServicos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvId,
             this.clnNome,
-            this.clnEmail,
             this.clnSenha,
-            this.clnCpf,
-            this.IdFuncionario});
+            this.clnCpf});
             this.dgvServicos.Location = new System.Drawing.Point(243, 41);
             this.dgvServicos.Name = "dgvServicos";
             this.dgvServicos.ReadOnly = true;
             this.dgvServicos.RowHeadersVisible = false;
-            this.dgvServicos.Size = new System.Drawing.Size(611, 136);
+            this.dgvServicos.Size = new System.Drawing.Size(453, 136);
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(243, 12);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 21;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // dgvId
             // 
@@ -192,14 +198,6 @@
             this.clnNome.ReadOnly = true;
             this.clnNome.Width = 250;
             // 
-            // clnEmail
-            // 
-            this.clnEmail.Frozen = true;
-            this.clnEmail.HeaderText = "Valor";
-            this.clnEmail.Name = "clnEmail";
-            this.clnEmail.ReadOnly = true;
-            this.clnEmail.Width = 90;
-            // 
             // clnSenha
             // 
             this.clnSenha.Frozen = true;
@@ -216,29 +214,11 @@
             this.clnCpf.ReadOnly = true;
             this.clnCpf.Width = 70;
             // 
-            // IdFuncionario
-            // 
-            this.IdFuncionario.Frozen = true;
-            this.IdFuncionario.HeaderText = "ID Funcionario";
-            this.IdFuncionario.Name = "IdFuncionario";
-            this.IdFuncionario.ReadOnly = true;
-            this.IdFuncionario.Width = 70;
-            // 
-            // btnListar
-            // 
-            this.btnListar.Location = new System.Drawing.Point(243, 12);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
-            this.btnListar.TabIndex = 21;
-            this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = true;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
-            // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 193);
+            this.ClientSize = new System.Drawing.Size(710, 193);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvServicos);
             this.Controls.Add(this.groupBox1);
@@ -269,9 +249,7 @@
         private System.Windows.Forms.Button btnEditarAlterar;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSenha;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCpf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdFuncionario;
     }
 }
