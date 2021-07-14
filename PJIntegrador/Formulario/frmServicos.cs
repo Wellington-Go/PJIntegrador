@@ -20,7 +20,6 @@ namespace PJIntegrador.Formulario
 
         private void LimparCampos()
         {
-            txtData.Clear();
             txtValor.Clear();
         }
 

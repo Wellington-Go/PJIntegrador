@@ -38,14 +38,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dgvServicos = new System.Windows.Forms.DataGridView();
             this.btnListar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.txtData = new System.Windows.Forms.DateTimePicker();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtValor = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +70,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.txtData);
             this.groupBox1.Controls.Add(this.txtValor);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnEditarAlterar);
@@ -119,6 +119,7 @@
             // 
             this.txtId.Location = new System.Drawing.Point(33, 22);
             this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(42, 20);
             this.txtId.TabIndex = 6;
             // 
@@ -141,13 +142,13 @@
             this.dgvId,
             this.clnNome,
             this.clnSenha,
-            this.clnCpf,
+            this.clienteNome,
             this.Valor});
             this.dgvServicos.Location = new System.Drawing.Point(266, 41);
             this.dgvServicos.Name = "dgvServicos";
             this.dgvServicos.ReadOnly = true;
             this.dgvServicos.RowHeadersVisible = false;
-            this.dgvServicos.Size = new System.Drawing.Size(521, 214);
+            this.dgvServicos.Size = new System.Drawing.Size(630, 214);
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
             // 
@@ -160,6 +161,29 @@
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 169);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Valor:";
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(9, 185);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 18;
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(9, 73);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(227, 20);
+            this.txtData.TabIndex = 19;
             // 
             // dgvId
             // 
@@ -185,13 +209,13 @@
             this.clnSenha.ReadOnly = true;
             this.clnSenha.Width = 90;
             // 
-            // clnCpf
+            // clienteNome
             // 
-            this.clnCpf.Frozen = true;
-            this.clnCpf.HeaderText = "ID Cliente";
-            this.clnCpf.Name = "clnCpf";
-            this.clnCpf.ReadOnly = true;
-            this.clnCpf.Width = 70;
+            this.clienteNome.Frozen = true;
+            this.clienteNome.HeaderText = "Nome do Cliente";
+            this.clienteNome.Name = "clienteNome";
+            this.clienteNome.ReadOnly = true;
+            this.clienteNome.Width = 180;
             // 
             // Valor
             // 
@@ -201,34 +225,11 @@
             this.Valor.ReadOnly = true;
             this.Valor.Width = 70;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 169);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Valor:";
-            // 
-            // txtValor
-            // 
-            this.txtValor.Location = new System.Drawing.Point(9, 185);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(100, 20);
-            this.txtValor.TabIndex = 18;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(9, 73);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(227, 20);
-            this.dateTimePicker1.TabIndex = 19;
-            // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 265);
+            this.ClientSize = new System.Drawing.Size(911, 265);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvServicos);
             this.Controls.Add(this.groupBox1);
@@ -256,11 +257,11 @@
         private System.Windows.Forms.Button btnEditarAlterar;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker txtData;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSenha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnCpf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clienteNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

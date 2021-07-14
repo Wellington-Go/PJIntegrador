@@ -55,7 +55,7 @@ namespace PJIntegrador.classes
         public static List<Servicos> ListarTodos() // LISTAR USUARIO - INICIO
         {
             List<Servicos> lista = new List<Servicos>();
-            string query = "select * from servico";
+            string query = "select a.id, a.descricao, a.data, a.valor, b.nome from servico a inner join cliente b on b.id = a.Cliente_id";
             var cmd = Banco.Abrir();
             cmd.CommandText = query;
             var dr = cmd.ExecuteReader();
