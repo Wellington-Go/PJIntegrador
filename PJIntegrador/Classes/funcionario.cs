@@ -17,22 +17,24 @@ namespace PJIntegrador.classes
         public string Telefone { get; set; }
         public string CPF { get; set; }
         public string Senha { get; set; }
+        public int IdServico { get; set; }
         public bool Ativo { get; set; }
 
         //=================================================construtor
         public Funcionario() { }
 
-        public Funcionario(string nome, string email, string telefone, string cpf, string senha, bool ativo = true)
+        public Funcionario(string nome, string email, string telefone, string cpf, string senha, int idServico, bool ativo = true)
         {
             Nome = nome;
             Email = email;
             Telefone = telefone;
             CPF = cpf;
             Senha = senha;
+            IdServico = idServico;
             Ativo = ativo;
         }
 
-        public Funcionario(int id, string nome, string email, string telefone, string cpf, string senha, bool ativo = true)
+        public Funcionario(int id, string nome, string email, string telefone, string cpf, string senha, int idServico, bool ativo = true)
         {
             Id = id;
             Nome = nome;
@@ -40,6 +42,7 @@ namespace PJIntegrador.classes
             Telefone = telefone;
             CPF = cpf;
             Senha = senha;
+            IdServico = idServico;
             Ativo = ativo;
         }
 
@@ -51,8 +54,8 @@ namespace PJIntegrador.classes
             {
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "insert " +
-                    "funcionario(nome, email, telefone, cpf, senha, ativo) " +
-                    "values ('" + Nome + "','" + Email + "','" + Telefone + "','" + CPF + "','" + Senha + "',default);";
+                    "funcionario(nome, email, telefone, cpf, senha, ativo, Servico_id) " +
+                    "values ('"+Nome+"','"+Email+"','"+Telefone+"','"+CPF+"','"+Senha+"',default,"+ IdServico + ");";
                 cmd.ExecuteNonQuery();
                 cmd.CommandText = "select @@identity";
                 Id = Convert.ToInt32(cmd.ExecuteScalar());

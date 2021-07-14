@@ -18,7 +18,8 @@ namespace PJIntegrador
                 txtEmail.Text,
                 txttelefone.Text,
                 txtSenha.Text,
-                mskCpf.Text
+                mskCpf.Text,
+                Convert.ToInt32(IdServico.Text)
             );
             form.Inserir();
             MessageBox.Show("Funcionario " + form.Id + " inserir!");
@@ -36,6 +37,7 @@ namespace PJIntegrador
             txtSenha.Clear();
             txttelefone.Clear();
             mskCpf.Clear();
+            IdServico.Clear();
         }
     }
 }
