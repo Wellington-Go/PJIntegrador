@@ -21,7 +21,6 @@ namespace PJIntegrador.Formulario
         private void LimparCampos()
         {
             txtDescricao.Clear();
-            txtValor.Clear();
             txtData.Clear();
         }
 
@@ -50,19 +49,15 @@ namespace PJIntegrador.Formulario
         private void DesbloquearControles()
         {
             txtDescricao.Enabled = true;
-            txtValor.Enabled = true;
             txtData.Enabled = true;
             cmbIdCliente.Enabled = true;
-            cmbIdFuncionario.Enabled = true;
         }
 
         private void BloquearControles()
         {
             txtDescricao.Enabled = false;
-            txtValor.Enabled = false;
             txtData.Enabled = false;
             cmbIdCliente.Enabled = false;
-            cmbIdFuncionario.Enabled = false;
         }
 
         private void cmbIdCliente_SelectedIndexChanged(object sender, EventArgs e)
@@ -84,10 +79,8 @@ namespace PJIntegrador.Formulario
             Servicos servicos = new Servicos();
             servicos.ID = int.Parse(txtId.Text);
             servicos.Descricao = txtDescricao.Text;
-            servicos.Valor = Convert.ToDouble(txtValor.Text);
             servicos.Data = Convert.ToDateTime(txtData.Text);
             servicos.IdCliente = Convert.ToInt32(cmbIdCliente.Text);
-            servicos.IdFuncionario = Convert.ToInt32(cmbIdFuncionario.Text);
             if (servicos.Alterar())
             {
                 MessageBox.Show("Serviço alterado com sucesso!");
@@ -109,10 +102,8 @@ namespace PJIntegrador.Formulario
                 dgvServicos.Rows.Add();
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[0].Value = item.ID;
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[1].Value = item.Descricao;
-                dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[2].Value = item.Valor;
-                dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[3].Value = item.Data;
-                dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[4].Value = item.IdCliente;
-                dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[5].Value = item.IdFuncionario;
+                dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[2].Value = item.Data;
+                dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[3].Value = item.IdCliente;
             }
         }
 
@@ -136,10 +127,8 @@ namespace PJIntegrador.Formulario
                 if (servicos.ID > 0)
                 {
                     txtDescricao.Text = servicos.Descricao;
-                    txtValor.Text = Convert.ToString(servicos.Valor);
                     txtData.Text = Convert.ToString(servicos.Data);
                     cmbIdCliente.Text = Convert.ToString(servicos.IdCliente);
-                    cmbIdFuncionario.Text = Convert.ToString(servicos.IdFuncionario);
                 }
                 else
                 {

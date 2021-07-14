@@ -12,36 +12,30 @@ namespace PJIntegrador.classes
     {
         public int ID { get; set; }
         public string Descricao { get; set; }
-        public double Valor { get; set; }
         public DateTime Data { get; set; }
         public int IdCliente { get; set; }
-        public int IdFuncionario { get; set; }
         //=======================================================
 
         public Servicos() { }
 
-        public Servicos(string descricao, double valor, DateTime data, int idCliente, int idFuncionario)
+        public Servicos(string descricao, DateTime data, int idCliente)
         {
             Descricao = descricao;
-            Valor = valor;
             Data = data;
             this.IdCliente = idCliente;
-            this.IdFuncionario = idFuncionario;
         }
 
-        public Servicos(int iD, string descricao, double valor, DateTime data, int idCliente, int idFuncionario)
+        public Servicos(int iD, string descricao, DateTime data, int idCliente)
         {
             ID = iD;
             Descricao = descricao;
-            Valor = valor;
             Data = data;
             this.IdCliente = idCliente;
-            this.IdFuncionario = idFuncionario;
         }
         //=====================================================
         public void BuscarPorId(int id)
         {
-            string query = "select * from servicoss where id = " + id;
+            string query = "select * from servico where id = " + id;
             var cmd = Banco.Abrir();
             cmd.CommandText = query;
             var dr = cmd.ExecuteReader();
@@ -49,17 +43,15 @@ namespace PJIntegrador.classes
             {
                 ID = dr.GetInt32(0);
                 Descricao = dr.GetString(1);
-                Valor = dr.GetDouble(2);
-                Data = dr.GetDateTime(3);
-                IdCliente = dr.GetInt32(4);
-                IdFuncionario = dr.GetInt32(5);
+                Data = dr.GetDateTime(2);
+                IdCliente = dr.GetInt32(3);
             }
         }
         //=======================================================
         public static List<Servicos> ListarTodos() // LISTAR USUARIO - INICIO
         {
             List<Servicos> lista = new List<Servicos>();
-            string query = "select * from servicos";
+            string query = "select * from servico";
             var cmd = Banco.Abrir();
             cmd.CommandText = query;
             var dr = cmd.ExecuteReader();
@@ -68,10 +60,8 @@ namespace PJIntegrador.classes
                 lista.Add(new Servicos(
                     dr.GetInt32(0),
                     dr.GetString(1),
-                    dr.GetDouble(2),
-                    dr.GetDateTime(3),
-                    dr.GetInt32(4),
-                    dr.GetInt32(5)
+                    dr.GetDateTime(2),
+                    dr.GetInt32(3)
                 ));
             }
             return lista;
@@ -80,12 +70,10 @@ namespace PJIntegrador.classes
         public bool Alterar()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update usuarios set " +
+            cmd.CommandText = "update servico set " +
                 "descricao = '" + Descricao + "', " +
-                "valor = '" + Valor + "', " +
                 "data = '" + Data + "', " +
                 "Cliente_id = '" + IdCliente + "', " +
-                "funcionario_id = " + IdFuncionario + ", " +
                 "where id = " + ID;
             int ret = cmd.ExecuteNonQuery();
             if (ret == 1)
