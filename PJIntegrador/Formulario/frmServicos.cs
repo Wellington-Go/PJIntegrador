@@ -20,8 +20,8 @@ namespace PJIntegrador.Formulario
 
         private void LimparCampos()
         {
-            txtDescricao.Clear();
             txtData.Clear();
+            txtValor.Clear();
         }
 
         private void frmServicos_Load(object sender, EventArgs e)
@@ -48,14 +48,12 @@ namespace PJIntegrador.Formulario
 
         private void DesbloquearControles()
         {
-            txtDescricao.Enabled = true;
             txtData.Enabled = true;
             cmbIdCliente.Enabled = true;
         }
 
         private void BloquearControles()
         {
-            txtDescricao.Enabled = false;
             txtData.Enabled = false;
             cmbIdCliente.Enabled = false;
         }
@@ -78,9 +76,9 @@ namespace PJIntegrador.Formulario
         {
             Servicos servicos = new Servicos();
             servicos.ID = int.Parse(txtId.Text);
-            servicos.Descricao = txtDescricao.Text;
             servicos.Data = Convert.ToDateTime(txtData.Text);
             servicos.IdCliente = Convert.ToInt32(cmbIdCliente.Text);
+            servicos.Valor = txtValor.Text;
             if (servicos.Alterar())
             {
                 MessageBox.Show("Serviço alterado com sucesso!");
@@ -104,6 +102,7 @@ namespace PJIntegrador.Formulario
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[1].Value = item.Descricao;
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[2].Value = item.Data;
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[3].Value = item.IdCliente;
+                dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[4].Value = item.Valor;
             }
         }
 
@@ -119,16 +118,15 @@ namespace PJIntegrador.Formulario
             else
             {
                 txtId.ReadOnly = true;
-                txtDescricao.Focus();
                 DesbloquearControles();
                 btnListar.Text = "...";
                 Servicos servicos = new Servicos();
                 servicos.BuscarPorId(int.Parse(txtId.Text));
                 if (servicos.ID > 0)
                 {
-                    txtDescricao.Text = servicos.Descricao;
                     txtData.Text = Convert.ToString(servicos.Data);
                     cmbIdCliente.Text = Convert.ToString(servicos.IdCliente);
+                    txtValor.Text = Convert.ToString(servicos.Valor);
                 }
                 else
                 {

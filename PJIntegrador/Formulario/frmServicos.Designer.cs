@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEditarAlterar = new System.Windows.Forms.Button();
             this.cmbIdCliente = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtData = new System.Windows.Forms.TextBox();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvServicos = new System.Windows.Forms.DataGridView();
@@ -45,6 +43,9 @@
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
             this.SuspendLayout();
@@ -58,19 +59,10 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Descrição:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(112, 55);
+            this.label4.Location = new System.Drawing.Point(6, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
             this.label4.TabIndex = 3;
@@ -78,26 +70,26 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtValor);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnEditarAlterar);
             this.groupBox1.Controls.Add(this.cmbIdCliente);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtData);
-            this.groupBox1.Controls.Add(this.txtDescricao);
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(225, 165);
+            this.groupBox1.Size = new System.Drawing.Size(165, 243);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Serviço";
             // 
             // btnEditarAlterar
             // 
-            this.btnEditarAlterar.Location = new System.Drawing.Point(9, 136);
+            this.btnEditarAlterar.Location = new System.Drawing.Point(9, 211);
             this.btnEditarAlterar.Name = "btnEditarAlterar";
             this.btnEditarAlterar.Size = new System.Drawing.Size(75, 23);
             this.btnEditarAlterar.TabIndex = 16;
@@ -108,7 +100,7 @@
             // cmbIdCliente
             // 
             this.cmbIdCliente.FormattingEnabled = true;
-            this.cmbIdCliente.Location = new System.Drawing.Point(9, 110);
+            this.cmbIdCliente.Location = new System.Drawing.Point(9, 129);
             this.cmbIdCliente.Name = "cmbIdCliente";
             this.cmbIdCliente.Size = new System.Drawing.Size(100, 21);
             this.cmbIdCliente.TabIndex = 14;
@@ -117,7 +109,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 94);
+            this.label6.Location = new System.Drawing.Point(6, 113);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 12;
@@ -125,28 +117,21 @@
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(115, 71);
+            this.txtData.Location = new System.Drawing.Point(9, 73);
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(100, 20);
             this.txtData.TabIndex = 11;
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(9, 71);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(100, 20);
-            this.txtDescricao.TabIndex = 7;
             // 
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(33, 22);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.Size = new System.Drawing.Size(42, 20);
             this.txtId.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(140, 20);
+            this.button1.Location = new System.Drawing.Point(81, 20);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -163,18 +148,19 @@
             this.dgvId,
             this.clnNome,
             this.clnSenha,
-            this.clnCpf});
-            this.dgvServicos.Location = new System.Drawing.Point(243, 41);
+            this.clnCpf,
+            this.Valor});
+            this.dgvServicos.Location = new System.Drawing.Point(183, 41);
             this.dgvServicos.Name = "dgvServicos";
             this.dgvServicos.ReadOnly = true;
             this.dgvServicos.RowHeadersVisible = false;
-            this.dgvServicos.Size = new System.Drawing.Size(453, 136);
+            this.dgvServicos.Size = new System.Drawing.Size(521, 214);
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(243, 12);
+            this.btnListar.Location = new System.Drawing.Point(183, 12);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 21;
@@ -214,11 +200,35 @@
             this.clnCpf.ReadOnly = true;
             this.clnCpf.Width = 70;
             // 
+            // Valor
+            // 
+            this.Valor.Frozen = true;
+            this.Valor.HeaderText = "valor";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
+            this.Valor.Width = 70;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 169);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Valor:";
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(9, 185);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 18;
+            // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 193);
+            this.ClientSize = new System.Drawing.Size(716, 265);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvServicos);
             this.Controls.Add(this.groupBox1);
@@ -235,10 +245,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtData;
@@ -247,9 +255,12 @@
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.ComboBox cmbIdCliente;
         private System.Windows.Forms.Button btnEditarAlterar;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSenha;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCpf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
     }
 }

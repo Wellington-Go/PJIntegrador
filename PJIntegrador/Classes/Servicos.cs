@@ -14,23 +14,26 @@ namespace PJIntegrador.classes
         public string Descricao { get; set; }
         public DateTime Data { get; set; }
         public int IdCliente { get; set; }
+        public string Valor { get; set; }
         //=======================================================
 
         public Servicos() { }
 
-        public Servicos(string descricao, DateTime data, int idCliente)
+        public Servicos(string descricao, DateTime data, int idCliente, string valor = null)
         {
             Descricao = descricao;
             Data = data;
             this.IdCliente = idCliente;
+            Valor = valor;
         }
 
-        public Servicos(int iD, string descricao, DateTime data, int idCliente)
+        public Servicos(int iD, string descricao, DateTime data, int idCliente, string valor = null)
         {
             ID = iD;
             Descricao = descricao;
             Data = data;
             this.IdCliente = idCliente;
+            Valor = valor;
         }
         //=====================================================
         public void BuscarPorId(int id)
@@ -45,6 +48,7 @@ namespace PJIntegrador.classes
                 Descricao = dr.GetString(1);
                 Data = dr.GetDateTime(2);
                 IdCliente = dr.GetInt32(3);
+                Valor = dr.GetString(4);
             }
         }
         //=======================================================
@@ -61,7 +65,8 @@ namespace PJIntegrador.classes
                     dr.GetInt32(0),
                     dr.GetString(1),
                     dr.GetDateTime(2),
-                    dr.GetInt32(3)
+                    dr.GetInt32(3),
+                    dr.GetString(4)
                 ));
             }
             return lista;
