@@ -62,7 +62,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(658, 99);
+            this.groupBox1.Size = new System.Drawing.Size(632, 99);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario Funcionario";
@@ -85,7 +85,7 @@
             // 
             // mskCpf
             // 
-            this.mskCpf.Location = new System.Drawing.Point(221, 43);
+            this.mskCpf.Location = new System.Drawing.Point(327, 43);
             this.mskCpf.Mask = "000.000.000-00";
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(83, 20);
@@ -103,7 +103,7 @@
             // 
             // txttelefone
             // 
-            this.txttelefone.Location = new System.Drawing.Point(310, 43);
+            this.txttelefone.Location = new System.Drawing.Point(221, 43);
             this.txttelefone.Name = "txttelefone";
             this.txttelefone.Size = new System.Drawing.Size(100, 20);
             this.txttelefone.TabIndex = 29;
@@ -125,7 +125,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(218, 27);
+            this.label7.Location = new System.Drawing.Point(324, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 13);
             this.label7.TabIndex = 26;
@@ -134,7 +134,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(307, 27);
+            this.label5.Location = new System.Drawing.Point(218, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 24;
@@ -179,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 119);
+            this.ClientSize = new System.Drawing.Size(654, 119);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFuncionario";
             this.Text = "Formulario Funcionario";

@@ -56,7 +56,7 @@ namespace PJIntegrador.classes
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "insert " +
                     "funcionario(nome, email, telefone, cpf, senha, ativo, Servico_id) " +
-                    "values ('"+Nome+"','"+Email+"','"+Telefone+"','"+CPF+"','"+Senha+"',default,"+IdServico+");";
+                    "values('"+Nome+"','"+Email+"','"+Telefone+"','"+CPF+"','"+Senha+"',default,"+IdServico+")";
                 cmd.ExecuteNonQuery();
                 cmd.CommandText = "select @@identity";
                 Id = Convert.ToInt32(cmd.ExecuteScalar());

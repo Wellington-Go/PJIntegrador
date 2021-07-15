@@ -17,8 +17,8 @@ namespace PJIntegrador
                 txtNome.Text,
                 txtEmail.Text,
                 txttelefone.Text,
-                txtSenha.Text,
                 mskCpf.Text,
+                txtSenha.Text,
                 Convert.ToInt32(IdServico.Text)
             );
             form.Inserir();
