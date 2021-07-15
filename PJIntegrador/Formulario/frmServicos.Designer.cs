@@ -38,12 +38,12 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvServicos = new System.Windows.Forms.DataGridView();
+            this.btnListar = new System.Windows.Forms.Button();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnListar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
             this.SuspendLayout();
@@ -150,9 +150,19 @@
             this.dgvServicos.Name = "dgvServicos";
             this.dgvServicos.ReadOnly = true;
             this.dgvServicos.RowHeadersVisible = false;
-            this.dgvServicos.Size = new System.Drawing.Size(630, 214);
+            this.dgvServicos.Size = new System.Drawing.Size(545, 214);
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(266, 12);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 21;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // dgvId
             // 
@@ -176,15 +186,15 @@
             this.clnSenha.HeaderText = "Data";
             this.clnSenha.Name = "clnSenha";
             this.clnSenha.ReadOnly = true;
-            this.clnSenha.Width = 90;
+            this.clnSenha.Width = 120;
             // 
             // clienteNome
             // 
             this.clienteNome.Frozen = true;
-            this.clienteNome.HeaderText = "Nome do Cliente";
+            this.clienteNome.HeaderText = "ID Cliente";
             this.clienteNome.Name = "clienteNome";
             this.clienteNome.ReadOnly = true;
-            this.clienteNome.Width = 180;
+            this.clienteNome.Width = 60;
             // 
             // Valor
             // 
@@ -194,21 +204,11 @@
             this.Valor.ReadOnly = true;
             this.Valor.Width = 70;
             // 
-            // btnListar
-            // 
-            this.btnListar.Location = new System.Drawing.Point(266, 12);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
-            this.btnListar.TabIndex = 21;
-            this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = true;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
-            // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 265);
+            this.ClientSize = new System.Drawing.Size(824, 265);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvServicos);
             this.Controls.Add(this.groupBox1);

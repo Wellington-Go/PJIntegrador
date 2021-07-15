@@ -55,15 +55,39 @@ namespace PJIntegrador.classes
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "insert " +
                     "funcionario(nome, email, telefone, cpf, senha, ativo, Servico_id) " +
-                    "values ('"+Nome+"','"+Email+"','"+Telefone+"','"+CPF+"','"+Senha+"',default,"+ IdServico + ");";
+                    "values ('"+Nome+"','"+Email+"','"+Telefone+"','"+CPF+"','"+Senha+"',default,"+IdServico+");";
                 cmd.ExecuteNonQuery();
                 cmd.CommandText = "select @@identity";
                 Id = Convert.ToInt32(cmd.ExecuteScalar());
             }
         }
+        //================================================================
+        public static List<Funcionario> ListarTodos() // LISTAR USUARIO - INICIO
+        {
+            List<Funcionario> lista = new List<Funcionario>();
+            string query = "select * from funcionario";
+            var cmd = Banco.Abrir();
+            cmd.CommandText = query;
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                lista.Add(new Funcionario(
+                    dr.GetInt32(0),
+                    dr.GetString(1),
+                    dr.GetString(2),
+                    dr.GetString(3),
+                    dr.GetString(4),
+                    dr.GetString(5),
+                    dr.GetInt32(7),
+                    dr.GetBoolean(6)
+                ));
+            }
+            return lista;
+        }
+
         //=================================================Fim Inserir
         public void BuscarFun(string _cpf, string _senha)
-           // SqlCommand cmd = new SqlCommand("SELECT * FROM Login WHERE User='" + txtUser.Text + "' AND Pass ='" + txtPass.Text + "'", con);
+        // SqlCommand cmd = new SqlCommand("SELECT * FROM Login WHERE User='" + txtUser.Text + "' AND Pass ='" + txtPass.Text + "'", con);
         {
             string query = "select * from funcionario where cpf = '" + _cpf + "' and senha = '" + _senha + "' ";
             var cmd = Banco.Abrir();
