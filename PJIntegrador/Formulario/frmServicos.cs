@@ -106,15 +106,13 @@ namespace PJIntegrador.Formulario
             if (btnListar.Text == "...")
             {
                 
-                txtId.Focus();
-                BloquearControles();
-                button1.Text = "Buscar";
+                
             }
             else
             {
-                txtId.ReadOnly = true;
+                txtId.ReadOnly = false;
                 DesbloquearControles();
-                button1.Text = "...";
+                button1.Text = "Buscar";
                 Servicos servicos = new Servicos();
                 servicos.BuscarPorId(int.Parse(txtId.Text));
                 if (servicos.ID > 0)
