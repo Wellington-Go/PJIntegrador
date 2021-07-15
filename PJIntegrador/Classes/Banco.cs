@@ -30,6 +30,7 @@ namespace PJIntegrador.classes
                 throw;
             }
             return cmd;
+            
         }
     }
 }

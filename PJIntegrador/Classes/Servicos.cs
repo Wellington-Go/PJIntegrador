@@ -75,11 +75,7 @@ namespace PJIntegrador.classes
         public bool Alterar()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandText = "update servico set " +
-                "descricao = '" + Descricao + "', " +
-                "data = '" + Data + "', " +
-                "Cliente_id = '" + IdCliente + "', " +
-                "where id = " + ID;
+            cmd.CommandText = "update servico set Cliente_id = "+IdCliente+", valor = '"+Valor+"' where id = "+ID+"";
             int ret = cmd.ExecuteNonQuery();
             if (ret == 1)
             {

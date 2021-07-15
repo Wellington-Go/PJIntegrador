@@ -31,35 +31,33 @@ namespace PJIntegrador.Formulario
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                cmbIdCliente.Items.Add(dr.GetInt32(1));
-
+                cmbIdCliente.Items.Add(dr.GetString(1));
+                
             }
-            string sql = "select * from funcionario order by nome";
-            var cd = Banco.Abrir();
-            cd.CommandText = sql;
-            var ds = cmd.ExecuteReader();
-            while (ds.Read())
-            {
-                cmbIdCliente.Items.Add(ds.GetInt32(1));
+            //string sql = "select * from funcionario order by nome";
+            //var cd = Banco.Abrir();
+            //cd.CommandText = sql;
+            //var ds = cmd.ExecuteReader();
+            //while (ds.Read())
+            //{
+            //    cmbIdCliente.Items.Add(ds.GetInt32(1));
 
-            } 
+            //}
         }
 
         private void DesbloquearControles()
         {
-            txtData.Enabled = true;
             cmbIdCliente.Enabled = true;
         }
 
         private void BloquearControles()
         {
-            txtData.Enabled = false;
             cmbIdCliente.Enabled = false;
         }
 
         private void cmbIdCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string query = "select * from servicos where id = '"+cmbIdCliente+"'";
+            string query = "select * from servico where id = '"+cmbIdCliente+"'";
             var cmd = Banco.Abrir();
             cmd.CommandText = query;
             var dr = cmd.ExecuteReader();
@@ -75,14 +73,12 @@ namespace PJIntegrador.Formulario
         {
             Servicos servicos = new Servicos();
             servicos.ID = int.Parse(txtId.Text);
-            servicos.Data = Convert.ToDateTime(txtData.Text);
             servicos.IdCliente = Convert.ToInt32(cmbIdCliente.Text);
             servicos.Valor = txtValor.Text;
             if (servicos.Alterar())
             {
                 MessageBox.Show("Serviço alterado com sucesso!");
                 LimparCampos();
-                btnListar_Click(sender, e);
             }
             else
             {
@@ -109,21 +105,20 @@ namespace PJIntegrador.Formulario
         {
             if (btnListar.Text == "...")
             {
-                txtId.ReadOnly = false;
+                
                 txtId.Focus();
                 BloquearControles();
-                btnListar.Text = "Buscar";
+                button1.Text = "Buscar";
             }
             else
             {
                 txtId.ReadOnly = true;
                 DesbloquearControles();
-                btnListar.Text = "...";
+                button1.Text = "...";
                 Servicos servicos = new Servicos();
                 servicos.BuscarPorId(int.Parse(txtId.Text));
                 if (servicos.ID > 0)
                 {
-                    txtData.Text = Convert.ToString(servicos.Data);
                     cmbIdCliente.Text = Convert.ToString(servicos.IdCliente);
                     txtValor.Text = Convert.ToString(servicos.Valor);
                 }
