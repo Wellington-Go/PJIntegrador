@@ -36,6 +36,7 @@ namespace PJIntegrador
             {
                 Funcionario fm = new Funcionario();
                 fm.BuscarFun(txtCpf.Text, txtSenha.Text);
+                MessageBox.Show(fm.msg);
             }
         }
 

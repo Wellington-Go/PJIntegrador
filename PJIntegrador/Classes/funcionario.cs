@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using PJIntegrador.classes;
+using PJIntegrador.Formulario;
 
 namespace PJIntegrador.classes
 {
@@ -73,7 +74,12 @@ namespace PJIntegrador.classes
             var dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
-                msg = "Sim";
+                 
+               
+                frmServicos app = new frmServicos();
+                app.Show();
+                Principal login = new Principal();
+                login.Close();
             }
             else
             {

@@ -22,14 +22,13 @@ namespace PJIntegrador
                 Convert.ToInt32(IdServico.Text)
             );
             form.Inserir();
-            MessageBox.Show("Funcionario " + form.Id + " inserir!");
+            MessageBox.Show("Funcionario "+form.Id+" inserir!");
             LimparCampos();
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)
-        {
+        { }
 
-        }
         private void LimparCampos()
         {
             txtNome.Clear();

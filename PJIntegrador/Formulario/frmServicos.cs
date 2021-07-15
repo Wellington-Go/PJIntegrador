@@ -106,10 +106,7 @@ namespace PJIntegrador.Formulario
         private void button1_Click(object sender, EventArgs e)
         {
             if (btnListar.Text == "...")
-            {
-                
-                
-            }
+            { }
             else
             {
                 txtId.ReadOnly = false;
