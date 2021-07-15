@@ -72,7 +72,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(657, 105);
+            this.groupBox1.Size = new System.Drawing.Size(658, 99);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario Funcionario";
@@ -198,16 +198,16 @@
             this.Senha,
             this.Ativo,
             this.Servico});
-            this.dgvFuncionarios.Location = new System.Drawing.Point(12, 156);
+            this.dgvFuncionarios.Location = new System.Drawing.Point(12, 146);
             this.dgvFuncionarios.Name = "dgvFuncionarios";
             this.dgvFuncionarios.ReadOnly = true;
             this.dgvFuncionarios.RowHeadersVisible = false;
-            this.dgvFuncionarios.Size = new System.Drawing.Size(657, 168);
+            this.dgvFuncionarios.Size = new System.Drawing.Size(658, 178);
             this.dgvFuncionarios.TabIndex = 4;
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(12, 127);
+            this.btnListar.Location = new System.Drawing.Point(12, 117);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 5;
@@ -277,7 +277,7 @@
             this.Controls.Add(this.dgvFuncionarios);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFuncionario";
-            this.Text = "frmFuncionario";
+            this.Text = "Formulario Funcionario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();

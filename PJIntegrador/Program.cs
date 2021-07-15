@@ -17,7 +17,7 @@ namespace PJIntegrador
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmServicos());
+            Application.Run(new Principal());
         }
     }
 }

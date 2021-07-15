@@ -89,7 +89,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\Acesso.cs" />
     <Compile Include="classes\Banco.cs" />
     <Compile Include="classes\Funcionario.cs" />
     <Compile Include="classes\Servicos.cs" />

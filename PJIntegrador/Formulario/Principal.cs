@@ -34,18 +34,14 @@ namespace PJIntegrador
                 txtSenha.Focus();
                 return;
             }
-            
+            else
             {
 
                 Funcionario fm = new Funcionario();
-                fm.BuscarFun(txtCpf.Text,txtSenha.Text);
+                fm.BuscarFun(txtCpf.Text, txtSenha.Text);
                 MessageBox.Show(fm.msg);
 
-              //Acesso cs = new Acesso(txtCpf.Text, txtSenha.Text);
-              // cs.Logar();
-              // MessageBox.Show("Logado com sucesso");
-              // PJIntegrador.Formulario.Servicos fm = new Formulario.Servicos();
-              // fm.Show();
+                
             }
         
         }
