@@ -99,6 +99,8 @@ namespace PJIntegrador.Formulario
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[3].Value = item.IdCliente;
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[4].Value = item.Valor;
             }
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
