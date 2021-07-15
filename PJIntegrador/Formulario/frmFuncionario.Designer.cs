@@ -42,17 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dgvFuncionarios = new System.Windows.Forms.DataGridView();
-            this.btnListar = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ativo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Servico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -185,102 +175,16 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Nome:";
             // 
-            // dgvFuncionarios
-            // 
-            this.dgvFuncionarios.AllowUserToAddRows = false;
-            this.dgvFuncionarios.AllowUserToDeleteRows = false;
-            this.dgvFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFuncionarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Nome,
-            this.CPF,
-            this.Telefone,
-            this.Senha,
-            this.Ativo,
-            this.Servico});
-            this.dgvFuncionarios.Location = new System.Drawing.Point(12, 146);
-            this.dgvFuncionarios.Name = "dgvFuncionarios";
-            this.dgvFuncionarios.ReadOnly = true;
-            this.dgvFuncionarios.RowHeadersVisible = false;
-            this.dgvFuncionarios.Size = new System.Drawing.Size(658, 178);
-            this.dgvFuncionarios.TabIndex = 4;
-            // 
-            // btnListar
-            // 
-            this.btnListar.Location = new System.Drawing.Point(12, 117);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
-            this.btnListar.TabIndex = 5;
-            this.btnListar.Text = "Lista";
-            this.btnListar.UseVisualStyleBackColor = true;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
-            // 
-            // ID
-            // 
-            this.ID.Frozen = true;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 60;
-            // 
-            // Nome
-            // 
-            this.Nome.Frozen = true;
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            this.Nome.Width = 180;
-            // 
-            // CPF
-            // 
-            this.CPF.Frozen = true;
-            this.CPF.HeaderText = "Cpf";
-            this.CPF.Name = "CPF";
-            this.CPF.ReadOnly = true;
-            // 
-            // Telefone
-            // 
-            this.Telefone.Frozen = true;
-            this.Telefone.HeaderText = "Telefone";
-            this.Telefone.Name = "Telefone";
-            this.Telefone.ReadOnly = true;
-            // 
-            // Senha
-            // 
-            this.Senha.Frozen = true;
-            this.Senha.HeaderText = "Senha";
-            this.Senha.Name = "Senha";
-            this.Senha.ReadOnly = true;
-            // 
-            // Ativo
-            // 
-            this.Ativo.Frozen = true;
-            this.Ativo.HeaderText = "Ativo";
-            this.Ativo.Name = "Ativo";
-            this.Ativo.ReadOnly = true;
-            this.Ativo.Width = 60;
-            // 
-            // Servico
-            // 
-            this.Servico.Frozen = true;
-            this.Servico.HeaderText = "ID Servico";
-            this.Servico.Name = "Servico";
-            this.Servico.ReadOnly = true;
-            this.Servico.Width = 60;
-            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 336);
-            this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.dgvFuncionarios);
+            this.ClientSize = new System.Drawing.Size(682, 119);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFuncionario";
             this.Text = "Formulario Funcionario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,14 +204,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox IdServico;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvFuncionarios;
-        private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Senha;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Ativo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Servico;
     }
 }

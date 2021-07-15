@@ -40,16 +40,16 @@
             // 
             // txtCpf
             // 
-            this.txtCpf.BackColor = System.Drawing.Color.Silver;
-            this.txtCpf.Location = new System.Drawing.Point(86, 62);
+            this.txtCpf.BackColor = System.Drawing.Color.LightGray;
+            this.txtCpf.Location = new System.Drawing.Point(70, 33);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(181, 22);
             this.txtCpf.TabIndex = 0;
             // 
             // txtSenha
             // 
-            this.txtSenha.BackColor = System.Drawing.Color.Silver;
-            this.txtSenha.Location = new System.Drawing.Point(83, 123);
+            this.txtSenha.BackColor = System.Drawing.Color.LightGray;
+            this.txtSenha.Location = new System.Drawing.Point(70, 97);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(181, 22);
             this.txtSenha.TabIndex = 2;
@@ -59,7 +59,7 @@
             // 
             this.bntLogin.BackColor = System.Drawing.Color.DarkBlue;
             this.bntLogin.ForeColor = System.Drawing.Color.Snow;
-            this.bntLogin.Location = new System.Drawing.Point(42, 167);
+            this.bntLogin.Location = new System.Drawing.Point(35, 137);
             this.bntLogin.Name = "bntLogin";
             this.bntLogin.Size = new System.Drawing.Size(85, 34);
             this.bntLogin.TabIndex = 6;
@@ -70,8 +70,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 59);
+            this.label2.Location = new System.Drawing.Point(6, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 23);
             this.label2.TabIndex = 9;
@@ -80,8 +81,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 123);
+            this.label3.Location = new System.Drawing.Point(6, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 23);
             this.label3.TabIndex = 10;
@@ -96,18 +98,19 @@
             this.groupBox1.Controls.Add(this.txtSenha);
             this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(291, 218);
+            this.groupBox1.Size = new System.Drawing.Size(275, 190);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "..";
+            this.groupBox1.Text = "Login:";
             // 
             // bntCadastro
             // 
             this.bntCadastro.BackColor = System.Drawing.Color.DarkBlue;
             this.bntCadastro.ForeColor = System.Drawing.Color.Snow;
-            this.bntCadastro.Location = new System.Drawing.Point(166, 167);
+            this.bntCadastro.Location = new System.Drawing.Point(150, 137);
             this.bntCadastro.Name = "bntCadastro";
             this.bntCadastro.Size = new System.Drawing.Size(85, 34);
             this.bntCadastro.TabIndex = 14;
@@ -119,11 +122,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(323, 250);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(299, 221);
             this.Controls.Add(this.groupBox1);
             this.Name = "Principal";
-            this.Text = "Principal";
+            this.Text = "Formulario Login";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

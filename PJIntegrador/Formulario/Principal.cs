@@ -16,8 +16,6 @@ namespace PJIntegrador
         {
             PJIntegrador.frmFuncionario fn = new frmFuncionario();
             fn.Show();
-            Close();
-          
         }
 
         private void bntLogin_Click(object sender, EventArgs e)
@@ -36,14 +34,9 @@ namespace PJIntegrador
             }
             else
             {
-
                 Funcionario fm = new Funcionario();
                 fm.BuscarFun(txtCpf.Text, txtSenha.Text);
-                MessageBox.Show(fm.msg);
-
-                
             }
-        
         }
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
