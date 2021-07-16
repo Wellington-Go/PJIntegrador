@@ -90,6 +90,7 @@
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(83, 20);
             this.mskCpf.TabIndex = 33;
+            this.mskCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCpf_MaskInputRejected);
             // 
             // btnInserir
             // 

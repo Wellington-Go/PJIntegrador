@@ -13,6 +13,7 @@ namespace PJIntegrador
 
         private void btnInserir_Click(object sender, EventArgs e)
         {
+            mskCpf.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals; // remove pontos e traços do cpf
             Funcionario form = new Funcionario(
                 txtNome.Text,
                 txtEmail.Text,
@@ -37,6 +38,11 @@ namespace PJIntegrador
             txttelefone.Clear();
             mskCpf.Clear();
             IdServico.Clear();
+        }
+
+        private void mskCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
