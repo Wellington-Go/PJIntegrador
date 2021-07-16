@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PJIntegrador.classes;
+using PJIntegrador.Formulario;
 
 namespace PJIntegrador.Formulario
 {
@@ -129,6 +130,15 @@ namespace PJIntegrador.Formulario
         private void dgvServicos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //PJIntegrador.frmCliente fn = new frmCliente();
+            //fn.Show();
+
+            PJIntegrador.Formulario.frmCliente cam = new frmCliente();
+            cam.Show();
         }
     }
 }
