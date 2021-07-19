@@ -121,7 +121,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(9, 122);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.Size = new System.Drawing.Size(148, 20);
             this.txtEmail.TabIndex = 9;
             // 
             // mskCpf
@@ -135,7 +135,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(9, 71);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(100, 20);
+            this.txtNome.Size = new System.Drawing.Size(148, 20);
             this.txtNome.TabIndex = 7;
             // 
             // label5
