@@ -90,6 +90,7 @@ namespace PJIntegrador.Formulario
                     endereco.Append(item.Logradouro); // mostrar logradouro e
                     endereco.Append(" _ Nº: " + item.Numero); // numero com ", " antes e
                     endereco.Append(" _ bairro: " + item.Bairro); // bairro com " - " antes
+                    endereco.Append(" _ cidade: " + item.Cidade); // Cidade com " - " antes
                     dgvEndereco.Rows[dgvEndereco.Rows.Count - 1].Cells[2].Value = endereco;
                 }
             }
