@@ -84,8 +84,9 @@ namespace PJIntegrador.Formulario
                     StringBuilder endereco = new StringBuilder();
                     endereco.Append(item.Logradouro); // mostrar logradouro e
                     endereco.Append(" _ Nº: " + item.Numero); // numero com ", " antes e
-                    endereco.Append(" _ bairro: " + item.Bairro); // bairro com " - " antes
-                    endereco.Append(" _ cidade: " + item.Cidade); // Cidade com " - " antes
+                    endereco.Append(" _ Bairro: " + item.Bairro); // bairro com " - " antes
+                    endereco.Append(" _ Cidade: " + item.Cidade); // Cidade com " - " antes
+                    endereco.Append(" _ " + item.Uf); // Uf
                     dgvEndereco.Rows[dgvEndereco.Rows.Count - 1].Cells[2].Value = endereco;
                 }
             }
