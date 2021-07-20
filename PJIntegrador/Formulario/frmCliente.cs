@@ -33,13 +33,8 @@ namespace PJIntegrador.Formulario
             if (cliente.Id > 0)
             {
                 txtNome.Text = cliente.Nome;
-                mskCpf.Text = cliente.Cpf;
-                mskCpf.Enabled = false;
                 txtEmail.Text = cliente.Email;
                 txtTelefone.Text = cliente.Telefone;
-                chkAtivo.Checked = cliente.Ativo;
-                chkAtivo.Enabled = true;
-                txtSenha.Text = cliente.Senha;
             }
             else
             {
