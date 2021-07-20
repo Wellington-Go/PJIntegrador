@@ -288,7 +288,7 @@
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCliente";
-            this.Text = "frmCliente";
+            this.Text = "Dados de Cliente";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();

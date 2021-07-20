@@ -70,7 +70,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(248, 243);
+            this.groupBox1.Size = new System.Drawing.Size(174, 243);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Serviço";
@@ -147,7 +147,7 @@
             this.clnSenha,
             this.clienteNome,
             this.Valor});
-            this.dgvServicos.Location = new System.Drawing.Point(266, 41);
+            this.dgvServicos.Location = new System.Drawing.Point(192, 41);
             this.dgvServicos.Name = "dgvServicos";
             this.dgvServicos.ReadOnly = true;
             this.dgvServicos.RowHeadersVisible = false;
@@ -197,7 +197,7 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(266, 12);
+            this.btnListar.Location = new System.Drawing.Point(192, 12);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 21;
@@ -207,7 +207,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(347, 12);
+            this.button2.Location = new System.Drawing.Point(273, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 23);
             this.button2.TabIndex = 22;
@@ -219,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 265);
+            this.ClientSize = new System.Drawing.Size(747, 265);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvServicos);

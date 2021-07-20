@@ -183,7 +183,7 @@
             this.ClientSize = new System.Drawing.Size(654, 119);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFuncionario";
-            this.Text = "Formulario Funcionario";
+            this.Text = "Cadastro do Funcionario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
