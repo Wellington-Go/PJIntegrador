@@ -104,7 +104,7 @@
             this.groupBox1.Size = new System.Drawing.Size(275, 190);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Login:";
+            this.groupBox1.Text = "Fazer Login:";
             // 
             // bntCadastro
             // 
@@ -126,7 +126,7 @@
             this.ClientSize = new System.Drawing.Size(299, 221);
             this.Controls.Add(this.groupBox1);
             this.Name = "Principal";
-            this.Text = "Formulario Login";
+            this.Text = "Pagina de Login";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

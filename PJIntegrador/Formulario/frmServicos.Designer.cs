@@ -73,7 +73,7 @@
             this.groupBox1.Size = new System.Drawing.Size(174, 243);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Formulario de Serviço";
+            this.groupBox1.Text = "Formulario de Serviço:";
             // 
             // txtValor
             // 
