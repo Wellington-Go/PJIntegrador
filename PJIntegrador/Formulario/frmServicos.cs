@@ -106,24 +106,18 @@ namespace PJIntegrador.Formulario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (btnListar.Text == "...")
-            { }
+            txtId.ReadOnly = false;
+            DesbloquearControles();
+            Servicos servicos = new Servicos();
+            servicos.BuscarPorId(int.Parse(txtId.Text));
+            if (servicos.ID > 0)
+            {
+                cmbIdCliente.Text = Convert.ToString(servicos.IdCliente);
+                txtValor.Text = Convert.ToString(servicos.Valor);
+            }
             else
             {
-                txtId.ReadOnly = false;
-                DesbloquearControles();
-                button1.Text = "Buscar";
-                Servicos servicos = new Servicos();
-                servicos.BuscarPorId(int.Parse(txtId.Text));
-                if (servicos.ID > 0)
-                {
-                    cmbIdCliente.Text = Convert.ToString(servicos.IdCliente);
-                    txtValor.Text = Convert.ToString(servicos.Valor);
-                }
-                else
-                {
-                    MessageBox.Show("Serviço não encontrado!");
-                }
+                MessageBox.Show("Serviço não encontrado!");
             }
         }
 

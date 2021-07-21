@@ -27,7 +27,6 @@ namespace PJIntegrador.Formulario
         private void button1_Click(object sender, EventArgs e)
         {
             txtNome.Focus();
-            button1.Text = "...";
             Cliente cliente = new Cliente();
             cliente.BuscarPorId(int.Parse(txtId.Text));
             if (cliente.Id > 0)

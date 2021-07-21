@@ -152,9 +152,9 @@
             // 
             this.btnListar.Location = new System.Drawing.Point(185, 12);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(83, 23);
+            this.btnListar.Size = new System.Drawing.Size(96, 23);
             this.btnListar.TabIndex = 15;
-            this.btnListar.Text = "Listar Clientes";
+            this.btnListar.Text = "Listar os Clientes";
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
