@@ -225,7 +225,7 @@
             this.Controls.Add(this.dgvServicos);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmServicos";
-            this.Text = "Servicos";
+            this.Text = "Serviços";
             this.Load += new System.EventHandler(this.frmServicos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

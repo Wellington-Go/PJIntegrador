@@ -74,8 +74,6 @@ namespace PJIntegrador.classes
             var dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
-                 
-               
                 frmServicos app = new frmServicos();
                 app.Show();
                 Principal login = new Principal();

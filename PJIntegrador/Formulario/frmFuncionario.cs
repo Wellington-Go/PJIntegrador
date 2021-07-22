@@ -23,7 +23,7 @@ namespace PJIntegrador
                 Convert.ToInt32(IdServico.Text)
             );
             form.Inserir();
-            MessageBox.Show("Funcionario "+form.Id+" inserir!");
+            MessageBox.Show("Funcionario com id: "+form.Id+", inserir!");
             LimparCampos();
         }
 

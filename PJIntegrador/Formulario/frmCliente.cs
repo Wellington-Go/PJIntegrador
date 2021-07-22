@@ -19,11 +19,6 @@ namespace PJIntegrador.Formulario
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             txtNome.Focus();
@@ -37,7 +32,7 @@ namespace PJIntegrador.Formulario
             }
             else
             {
-                MessageBox.Show("Cliente não encontrado!");
+                MessageBox.Show("Cliente não encontrado, verifique a listade clientes!");
             }
         }
 

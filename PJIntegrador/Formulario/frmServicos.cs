@@ -51,11 +51,6 @@ namespace PJIntegrador.Formulario
             cmbIdCliente.Enabled = true;
         }
 
-        private void BloquearControles()
-        {
-            cmbIdCliente.Enabled = false;
-        }
-
         private void cmbIdCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
             string query = "select * from servico where id = '"+cmbIdCliente+"'";
@@ -117,7 +112,7 @@ namespace PJIntegrador.Formulario
             }
             else
             {
-                MessageBox.Show("Serviço não encontrado!");
+                MessageBox.Show("Serviço não encontrado, verifique a lista de serviços!");
             }
         }
 
@@ -130,7 +125,6 @@ namespace PJIntegrador.Formulario
         {
             //PJIntegrador.frmCliente fn = new frmCliente();
             //fn.Show();
-
             PJIntegrador.Formulario.frmCliente cam = new frmCliente();
             cam.Show();
         }
