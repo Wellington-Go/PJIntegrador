@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.IdServico = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.mskCpf = new System.Windows.Forms.MaskedTextBox();
             this.btnInserir = new System.Windows.Forms.Button();
             this.txttelefone = new System.Windows.Forms.TextBox();
@@ -47,8 +45,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.IdServico);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.mskCpf);
             this.groupBox1.Controls.Add(this.btnInserir);
             this.groupBox1.Controls.Add(this.txttelefone);
@@ -62,26 +58,10 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(632, 101);
+            this.groupBox1.Size = new System.Drawing.Size(525, 101);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do  Funcionario:";
-            // 
-            // IdServico
-            // 
-            this.IdServico.Location = new System.Drawing.Point(522, 43);
-            this.IdServico.Name = "IdServico";
-            this.IdServico.Size = new System.Drawing.Size(100, 20);
-            this.IdServico.TabIndex = 35;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(519, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Id de Serviço:";
             // 
             // mskCpf
             // 
@@ -180,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 121);
+            this.ClientSize = new System.Drawing.Size(546, 121);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFuncionario";
             this.Text = "Cadastro do Funcionario";
@@ -203,7 +183,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox IdServico;
-        private System.Windows.Forms.Label label1;
     }
 }

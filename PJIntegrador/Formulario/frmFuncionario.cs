@@ -19,8 +19,7 @@ namespace PJIntegrador
                 txtEmail.Text,
                 txttelefone.Text,
                 mskCpf.Text,
-                txtSenha.Text,
-                Convert.ToInt32(IdServico.Text)
+                txtSenha.Text
             );
             form.Inserir();
             MessageBox.Show("Funcionario com id: "+form.Id+" inserido!");
@@ -37,7 +36,6 @@ namespace PJIntegrador
             txtSenha.Clear();
             txttelefone.Clear();
             mskCpf.Clear();
-            IdServico.Clear();
         }
 
         private void mskCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)

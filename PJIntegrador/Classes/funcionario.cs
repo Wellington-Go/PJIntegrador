@@ -18,13 +18,13 @@ namespace PJIntegrador.classes
         public string Telefone { get; set; }
         public string CPF { get; set; }
         public string Senha { get; set; }
-        public int IdServico { get; set; }
+        public string IdServico { get; set; }
         public bool Ativo { get; set; }
 
         //=================================================construtor
         public Funcionario() { }
 
-        public Funcionario(string nome, string email, string telefone, string cpf, string senha, int idServico, bool ativo = true)
+        public Funcionario(string nome, string email, string telefone, string cpf, string senha, bool ativo = true, string idServico = null)
         {
             Nome = nome;
             Email = email;
@@ -35,7 +35,7 @@ namespace PJIntegrador.classes
             Ativo = ativo;
         }
 
-        public Funcionario(int id, string nome, string email, string telefone, string cpf, string senha, int idServico, bool ativo = true)
+        public Funcionario(int id, string nome, string email, string telefone, string cpf, string senha, bool ativo = true, string idServico = null)
         {
             Id = id;
             Nome = nome;
@@ -57,7 +57,7 @@ namespace PJIntegrador.classes
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "insert " +
                     "funcionario(nome, email, telefone, cpf, senha, ativo, Servico_id) " +
-                    "values('"+Nome+"','"+Email+"','"+Telefone+"','"+CPF+"','"+Senha+"',default,"+IdServico+")";
+                    "values('"+Nome+"','"+Email+"','"+Telefone+"','"+CPF+"','"+Senha+"',default,'1')";
                 cmd.ExecuteNonQuery();
                 cmd.CommandText = "select @@identity";
                 Id = Convert.ToInt32(cmd.ExecuteScalar());
