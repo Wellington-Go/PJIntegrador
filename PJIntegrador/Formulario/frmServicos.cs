@@ -59,7 +59,6 @@ namespace PJIntegrador.Formulario
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-
                 label6.Text=(dr.GetString(0));
             }
         }

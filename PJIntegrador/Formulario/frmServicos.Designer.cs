@@ -225,6 +225,7 @@
             this.Controls.Add(this.dgvServicos);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmServicos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Serviços";
             this.Load += new System.EventHandler(this.frmServicos_Load);
             this.groupBox1.ResumeLayout(false);
