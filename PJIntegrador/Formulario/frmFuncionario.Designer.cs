@@ -163,6 +163,7 @@
             this.ClientSize = new System.Drawing.Size(546, 121);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

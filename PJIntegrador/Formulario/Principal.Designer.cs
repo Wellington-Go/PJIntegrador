@@ -126,6 +126,7 @@
             this.ClientSize = new System.Drawing.Size(299, 180);
             this.Controls.Add(this.groupBox1);
             this.Name = "Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Login";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
