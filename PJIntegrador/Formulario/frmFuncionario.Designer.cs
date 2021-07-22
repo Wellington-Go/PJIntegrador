@@ -58,14 +58,14 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(525, 101);
+            this.groupBox1.Size = new System.Drawing.Size(522, 97);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Dados do  Funcionario:";
+            this.groupBox1.Text = "Dados do Funcionario:";
             // 
             // mskCpf
             // 
-            this.mskCpf.Location = new System.Drawing.Point(327, 43);
+            this.mskCpf.Location = new System.Drawing.Point(327, 41);
             this.mskCpf.Mask = "000.000.000-00";
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(83, 20);
@@ -76,29 +76,29 @@
             // 
             this.btnInserir.Location = new System.Drawing.Point(9, 69);
             this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(75, 23);
+            this.btnInserir.Size = new System.Drawing.Size(100, 23);
             this.btnInserir.TabIndex = 32;
-            this.btnInserir.Text = "&Inserir";
+            this.btnInserir.Text = "&Inserir seus dados";
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // txttelefone
             // 
-            this.txttelefone.Location = new System.Drawing.Point(221, 43);
+            this.txttelefone.Location = new System.Drawing.Point(221, 41);
             this.txttelefone.Name = "txttelefone";
             this.txttelefone.Size = new System.Drawing.Size(100, 20);
             this.txttelefone.TabIndex = 29;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(416, 43);
+            this.txtSenha.Location = new System.Drawing.Point(416, 41);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(100, 20);
             this.txtSenha.TabIndex = 28;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(115, 43);
+            this.txtEmail.Location = new System.Drawing.Point(115, 41);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 27;
@@ -106,7 +106,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(324, 27);
+            this.label7.Location = new System.Drawing.Point(324, 25);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 13);
             this.label7.TabIndex = 26;
@@ -115,7 +115,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(218, 27);
+            this.label5.Location = new System.Drawing.Point(218, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 24;
@@ -124,7 +124,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(413, 27);
+            this.label4.Location = new System.Drawing.Point(413, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 23;
@@ -133,7 +133,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(112, 27);
+            this.label3.Location = new System.Drawing.Point(112, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 22;
@@ -141,7 +141,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(9, 43);
+            this.txtNome.Location = new System.Drawing.Point(9, 41);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
             this.txtNome.TabIndex = 21;
@@ -150,7 +150,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 27);
+            this.label2.Location = new System.Drawing.Point(6, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 20;
@@ -163,7 +163,7 @@
             this.ClientSize = new System.Drawing.Size(546, 121);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFuncionario";
-            this.Text = "Cadastro do Funcionario";
+            this.Text = "Funcionario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
