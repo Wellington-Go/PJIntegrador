@@ -62,7 +62,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(632, 99);
+            this.groupBox1.Size = new System.Drawing.Size(632, 101);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do  Funcionario:";
@@ -180,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 119);
+            this.ClientSize = new System.Drawing.Size(654, 121);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmFuncionario";
             this.Text = "Cadastro do Funcionario";
