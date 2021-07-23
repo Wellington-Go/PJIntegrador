@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.bntLogin = new System.Windows.Forms.Button();
@@ -59,11 +60,14 @@
             // 
             this.bntLogin.BackColor = System.Drawing.Color.DarkBlue;
             this.bntLogin.ForeColor = System.Drawing.Color.Snow;
+            this.bntLogin.Image = ((System.Drawing.Image)(resources.GetObject("bntLogin.Image")));
+            this.bntLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bntLogin.Location = new System.Drawing.Point(29, 113);
             this.bntLogin.Name = "bntLogin";
-            this.bntLogin.Size = new System.Drawing.Size(85, 34);
+            this.bntLogin.Size = new System.Drawing.Size(70, 34);
             this.bntLogin.TabIndex = 6;
             this.bntLogin.Text = "Login";
+            this.bntLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bntLogin.UseVisualStyleBackColor = false;
             this.bntLogin.Click += new System.EventHandler(this.bntLogin_Click);
             // 
@@ -110,11 +114,14 @@
             // 
             this.bntCadastro.BackColor = System.Drawing.Color.DarkBlue;
             this.bntCadastro.ForeColor = System.Drawing.Color.Snow;
-            this.bntCadastro.Location = new System.Drawing.Point(144, 113);
+            this.bntCadastro.Image = ((System.Drawing.Image)(resources.GetObject("bntCadastro.Image")));
+            this.bntCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntCadastro.Location = new System.Drawing.Point(128, 113);
             this.bntCadastro.Name = "bntCadastro";
-            this.bntCadastro.Size = new System.Drawing.Size(85, 34);
+            this.bntCadastro.Size = new System.Drawing.Size(96, 34);
             this.bntCadastro.TabIndex = 14;
             this.bntCadastro.Text = "Cadastro";
+            this.bntCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bntCadastro.UseVisualStyleBackColor = false;
             this.bntCadastro.Click += new System.EventHandler(this.bntCadastro_Click);
             // 
@@ -125,6 +132,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(299, 180);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Login";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmServicos));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtValor = new System.Windows.Forms.TextBox();
@@ -38,15 +39,27 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvServicos = new System.Windows.Forms.DataGridView();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtIdRecibo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.txtValorRecibo = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnListar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -60,6 +73,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Controls.Add(this.txtValor);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnEditarAlterar);
@@ -87,18 +101,22 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 115);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Valor:";
+            this.label2.Text = "Valor R$:";
             // 
             // btnEditarAlterar
             // 
+            this.btnEditarAlterar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditarAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarAlterar.Image")));
+            this.btnEditarAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditarAlterar.Location = new System.Drawing.Point(9, 211);
             this.btnEditarAlterar.Name = "btnEditarAlterar";
-            this.btnEditarAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditarAlterar.Size = new System.Drawing.Size(81, 23);
             this.btnEditarAlterar.TabIndex = 16;
-            this.btnEditarAlterar.Text = "Alterar";
-            this.btnEditarAlterar.UseVisualStyleBackColor = true;
+            this.btnEditarAlterar.Text = "Editar Valor";
+            this.btnEditarAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditarAlterar.UseVisualStyleBackColor = false;
             this.btnEditarAlterar.Click += new System.EventHandler(this.btnEditarAlterar_Click);
             // 
             // cmbIdCliente
@@ -128,18 +146,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(81, 20);
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(81, 18);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(80, 27);
             this.button1.TabIndex = 5;
             this.button1.Text = "Buscar ID";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvServicos
             // 
             this.dgvServicos.AllowUserToAddRows = false;
             this.dgvServicos.AllowUserToDeleteRows = false;
+            this.dgvServicos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvServicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServicos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvId,
@@ -154,46 +177,6 @@
             this.dgvServicos.Size = new System.Drawing.Size(545, 214);
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
-            // 
-            // dgvId
-            // 
-            this.dgvId.Frozen = true;
-            this.dgvId.HeaderText = "ID";
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
-            this.dgvId.Width = 40;
-            // 
-            // clnNome
-            // 
-            this.clnNome.Frozen = true;
-            this.clnNome.HeaderText = "Descrição";
-            this.clnNome.Name = "clnNome";
-            this.clnNome.ReadOnly = true;
-            this.clnNome.Width = 250;
-            // 
-            // clnSenha
-            // 
-            this.clnSenha.Frozen = true;
-            this.clnSenha.HeaderText = "Data";
-            this.clnSenha.Name = "clnSenha";
-            this.clnSenha.ReadOnly = true;
-            this.clnSenha.Width = 120;
-            // 
-            // clienteNome
-            // 
-            this.clienteNome.Frozen = true;
-            this.clienteNome.HeaderText = "ID Cliente";
-            this.clienteNome.Name = "clienteNome";
-            this.clienteNome.ReadOnly = true;
-            this.clienteNome.Width = 60;
-            // 
-            // Valor
-            // 
-            this.Valor.Frozen = true;
-            this.Valor.HeaderText = "valor";
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
-            this.Valor.Width = 70;
             // 
             // btnListar
             // 
@@ -215,15 +198,160 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.txtData);
+            this.groupBox2.Controls.Add(this.txtValorRecibo);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.btnBuscar);
+            this.groupBox2.Controls.Add(this.txtDescricao);
+            this.groupBox2.Controls.Add(this.txtIdCliente);
+            this.groupBox2.Controls.Add(this.txtIdRecibo);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Location = new System.Drawing.Point(12, 261);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(291, 159);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Recibo do pedido:";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBuscar.Location = new System.Drawing.Point(59, 29);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(110, 23);
+            this.btnBuscar.TabIndex = 0;
+            this.btnBuscar.Text = "<- Codigo do pedido";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtIdRecibo
+            // 
+            this.txtIdRecibo.Location = new System.Drawing.Point(9, 31);
+            this.txtIdRecibo.Name = "txtIdRecibo";
+            this.txtIdRecibo.Size = new System.Drawing.Size(44, 20);
+            this.txtIdRecibo.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Descrição do pedido:";
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(9, 80);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(271, 20);
+            this.txtDescricao.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(164, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(116, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Data e hora do pedido:";
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(167, 128);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(113, 20);
+            this.txtData.TabIndex = 5;
+            // 
+            // txtValorRecibo
+            // 
+            this.txtValorRecibo.Location = new System.Drawing.Point(9, 128);
+            this.txtValorRecibo.Name = "txtValorRecibo";
+            this.txtValorRecibo.Size = new System.Drawing.Size(81, 20);
+            this.txtValorRecibo.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 112);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Valor do pedido:";
+            // 
+            // txtIdCliente
+            // 
+            this.txtIdCliente.Location = new System.Drawing.Point(96, 128);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(65, 20);
+            this.txtIdCliente.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(93, 112);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "ID do cliente:";
+            // 
+            // dgvId
+            // 
+            this.dgvId.Frozen = true;
+            this.dgvId.HeaderText = "Codigo";
+            this.dgvId.Name = "dgvId";
+            this.dgvId.ReadOnly = true;
+            this.dgvId.Width = 50;
+            // 
+            // clnNome
+            // 
+            this.clnNome.Frozen = true;
+            this.clnNome.HeaderText = "Descrição do serviço";
+            this.clnNome.Name = "clnNome";
+            this.clnNome.ReadOnly = true;
+            this.clnNome.Width = 250;
+            // 
+            // clnSenha
+            // 
+            this.clnSenha.Frozen = true;
+            this.clnSenha.HeaderText = "Data";
+            this.clnSenha.Name = "clnSenha";
+            this.clnSenha.ReadOnly = true;
+            this.clnSenha.Width = 120;
+            // 
+            // clienteNome
+            // 
+            this.clienteNome.Frozen = true;
+            this.clienteNome.HeaderText = "Cliente";
+            this.clienteNome.Name = "clienteNome";
+            this.clienteNome.ReadOnly = true;
+            this.clienteNome.Width = 60;
+            // 
+            // Valor
+            // 
+            this.Valor.Frozen = true;
+            this.Valor.HeaderText = "valor R$";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
+            this.Valor.Width = 70;
+            // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 265);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(747, 427);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvServicos);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmServicos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Serviços";
@@ -231,6 +359,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,11 +378,22 @@
         private System.Windows.Forms.Button btnEditarAlterar;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtData;
+        private System.Windows.Forms.TextBox txtValorRecibo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.TextBox txtIdRecibo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSenha;
         private System.Windows.Forms.DataGridViewTextBoxColumn clienteNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
-        private System.Windows.Forms.Button button2;
     }
 }

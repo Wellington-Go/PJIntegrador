@@ -22,13 +22,13 @@ namespace PJIntegrador
         {
             if(txtCpf.Text == string.Empty) 
             {
-                MessageBox.Show("Campo vazio");
+                MessageBox.Show("Cpf vazio, obrigatório ser preenchido!", "Projeto integrador!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtCpf.Focus();
                 return;
             }
             else if (txtSenha.Text == string.Empty)
             {
-                MessageBox.Show("Campo vazio");
+                MessageBox.Show("Senha vazia, obrigatório ser preenchido!", "Projeto integrador!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtSenha.Focus();
                 return;
             }
@@ -36,6 +36,7 @@ namespace PJIntegrador
             {
                 Funcionario fm = new Funcionario();
                 fm.BuscarFun(txtCpf.Text, txtSenha.Text);
+                MessageBox.Show(fm.msg, "Projeto integrador!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

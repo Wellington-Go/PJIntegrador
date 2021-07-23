@@ -74,6 +74,7 @@ namespace PJIntegrador.classes
             var dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
+                msg = "Seja bem vindo ao sistema";
                 frmServicos app = new frmServicos();
                 app.Show();
                 Principal login = new Principal();
@@ -81,7 +82,7 @@ namespace PJIntegrador.classes
             }
             else
             {
-                msg = "nao encontrado!";
+                msg = "Funcionario não encontrado!";
             }
         }
     }

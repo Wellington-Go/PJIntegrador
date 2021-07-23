@@ -72,8 +72,9 @@ namespace PJIntegrador.Formulario
             servicos.Valor = txtValor.Text;
             if (servicos.Alterar())
             {
-                MessageBox.Show("Serviço alterado com sucesso!");
+                MessageBox.Show("Valor alterado com sucesso!", "Projeto integrador!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimparCampos();
+                btnListar_Click(sender, e);
             }
             else
             {
@@ -94,8 +95,6 @@ namespace PJIntegrador.Formulario
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[3].Value = item.IdCliente;
                 dgvServicos.Rows[dgvServicos.Rows.Count - 1].Cells[4].Value = item.Valor;
             }
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -126,6 +125,23 @@ namespace PJIntegrador.Formulario
             //fn.Show();
             PJIntegrador.Formulario.frmCliente cam = new frmCliente();
             cam.Show();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Servicos servicos = new Servicos();
+            servicos.BuscarPorId(int.Parse(txtIdRecibo.Text));
+            if (servicos.ID > 0)
+            {
+                txtIdCliente.Text = Convert.ToString(servicos.IdCliente);
+                txtDescricao.Text = servicos.Descricao;
+                txtValorRecibo.Text = Convert.ToString(servicos.Valor);
+                txtData.Text = Convert.ToString(servicos.Data);
+            }
+            else
+            {
+                MessageBox.Show("Serviço não encontrado, verifique a lista de serviços!");
+            }
         }
     }
 }
