@@ -288,6 +288,7 @@
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
