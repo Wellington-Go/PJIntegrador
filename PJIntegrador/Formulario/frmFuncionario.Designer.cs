@@ -46,7 +46,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.mskCpf);
             this.groupBox1.Controls.Add(this.btnInserir);
             this.groupBox1.Controls.Add(this.txttelefone);
@@ -60,7 +60,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(522, 97);
+            this.groupBox1.Size = new System.Drawing.Size(522, 104);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do Funcionario:";
@@ -76,10 +76,11 @@
             // 
             // btnInserir
             // 
-            this.btnInserir.BackColor = System.Drawing.SystemColors.Control;
+            this.btnInserir.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnInserir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInserir.Image = ((System.Drawing.Image)(resources.GetObject("btnInserir.Image")));
             this.btnInserir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInserir.Location = new System.Drawing.Point(9, 69);
+            this.btnInserir.Location = new System.Drawing.Point(9, 75);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(91, 23);
             this.btnInserir.TabIndex = 32;
@@ -167,8 +168,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(546, 121);
+            this.ClientSize = new System.Drawing.Size(546, 124);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionario";

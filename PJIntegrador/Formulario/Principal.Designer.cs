@@ -41,7 +41,7 @@
             // 
             // txtCpf
             // 
-            this.txtCpf.BackColor = System.Drawing.Color.LightGray;
+            this.txtCpf.BackColor = System.Drawing.Color.Gainsboro;
             this.txtCpf.Location = new System.Drawing.Point(75, 31);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(181, 22);
@@ -49,7 +49,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.BackColor = System.Drawing.Color.LightGray;
+            this.txtSenha.BackColor = System.Drawing.Color.Gainsboro;
             this.txtSenha.Location = new System.Drawing.Point(75, 74);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(181, 22);
@@ -59,10 +59,11 @@
             // bntLogin
             // 
             this.bntLogin.BackColor = System.Drawing.Color.DarkBlue;
+            this.bntLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntLogin.ForeColor = System.Drawing.Color.Snow;
             this.bntLogin.Image = ((System.Drawing.Image)(resources.GetObject("bntLogin.Image")));
             this.bntLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntLogin.Location = new System.Drawing.Point(29, 113);
+            this.bntLogin.Location = new System.Drawing.Point(36, 113);
             this.bntLogin.Name = "bntLogin";
             this.bntLogin.Size = new System.Drawing.Size(70, 34);
             this.bntLogin.TabIndex = 6;
@@ -113,10 +114,11 @@
             // bntCadastro
             // 
             this.bntCadastro.BackColor = System.Drawing.Color.DarkBlue;
+            this.bntCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntCadastro.ForeColor = System.Drawing.Color.Snow;
             this.bntCadastro.Image = ((System.Drawing.Image)(resources.GetObject("bntCadastro.Image")));
             this.bntCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntCadastro.Location = new System.Drawing.Point(128, 113);
+            this.bntCadastro.Location = new System.Drawing.Point(141, 113);
             this.bntCadastro.Name = "bntCadastro";
             this.bntCadastro.Size = new System.Drawing.Size(96, 34);
             this.bntCadastro.TabIndex = 14;
@@ -134,7 +136,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

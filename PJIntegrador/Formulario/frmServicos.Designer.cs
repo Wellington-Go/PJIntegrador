@@ -57,6 +57,7 @@
             this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -73,7 +74,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.txtValor);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnEditarAlterar);
@@ -82,16 +83,16 @@
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(13, 261);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(174, 243);
+            this.groupBox1.Size = new System.Drawing.Size(174, 191);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Serviço:";
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(9, 131);
+            this.txtValor.Location = new System.Drawing.Point(9, 129);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 18;
@@ -99,7 +100,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 115);
+            this.label2.Location = new System.Drawing.Point(6, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 17;
@@ -110,7 +111,7 @@
             this.btnEditarAlterar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEditarAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarAlterar.Image")));
             this.btnEditarAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarAlterar.Location = new System.Drawing.Point(9, 211);
+            this.btnEditarAlterar.Location = new System.Drawing.Point(9, 162);
             this.btnEditarAlterar.Name = "btnEditarAlterar";
             this.btnEditarAlterar.Size = new System.Drawing.Size(81, 23);
             this.btnEditarAlterar.TabIndex = 16;
@@ -122,7 +123,7 @@
             // cmbIdCliente
             // 
             this.cmbIdCliente.FormattingEnabled = true;
-            this.cmbIdCliente.Location = new System.Drawing.Point(9, 75);
+            this.cmbIdCliente.Location = new System.Drawing.Point(9, 85);
             this.cmbIdCliente.Name = "cmbIdCliente";
             this.cmbIdCliente.Size = new System.Drawing.Size(100, 21);
             this.cmbIdCliente.TabIndex = 14;
@@ -131,7 +132,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 59);
+            this.label6.Location = new System.Drawing.Point(6, 69);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 12;
@@ -147,6 +148,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(81, 18);
@@ -170,7 +172,7 @@
             this.clnSenha,
             this.clienteNome,
             this.Valor});
-            this.dgvServicos.Location = new System.Drawing.Point(192, 41);
+            this.dgvServicos.Location = new System.Drawing.Point(13, 41);
             this.dgvServicos.Name = "dgvServicos";
             this.dgvServicos.ReadOnly = true;
             this.dgvServicos.RowHeadersVisible = false;
@@ -180,17 +182,19 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(192, 12);
+            this.btnListar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListar.Location = new System.Drawing.Point(12, 12);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.Size = new System.Drawing.Size(91, 23);
             this.btnListar.TabIndex = 21;
-            this.btnListar.Text = "Listar";
+            this.btnListar.Text = "Listar Serviços";
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(273, 12);
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Location = new System.Drawing.Point(109, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 23);
             this.button2.TabIndex = 22;
@@ -200,7 +204,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtData);
             this.groupBox2.Controls.Add(this.txtValorRecibo);
@@ -211,9 +216,9 @@
             this.groupBox2.Controls.Add(this.txtIdCliente);
             this.groupBox2.Controls.Add(this.txtIdRecibo);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(12, 261);
+            this.groupBox2.Location = new System.Drawing.Point(209, 261);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(291, 159);
+            this.groupBox2.Size = new System.Drawing.Size(349, 191);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Recibo do pedido:";
@@ -221,17 +226,21 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBuscar.Location = new System.Drawing.Point(59, 29);
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(105, 26);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(110, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(115, 23);
             this.btnBuscar.TabIndex = 0;
-            this.btnBuscar.Text = "<- Codigo do pedido";
+            this.btnBuscar.Text = "Codigo do pedido";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtIdRecibo
             // 
-            this.txtIdRecibo.Location = new System.Drawing.Point(9, 31);
+            this.txtIdRecibo.Location = new System.Drawing.Point(55, 28);
             this.txtIdRecibo.Name = "txtIdRecibo";
             this.txtIdRecibo.Size = new System.Drawing.Size(44, 20);
             this.txtIdRecibo.TabIndex = 1;
@@ -239,7 +248,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 64);
+            this.label3.Location = new System.Drawing.Point(6, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 13);
             this.label3.TabIndex = 2;
@@ -247,15 +256,15 @@
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(9, 80);
+            this.txtDescricao.Location = new System.Drawing.Point(9, 96);
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(271, 20);
+            this.txtDescricao.Size = new System.Drawing.Size(329, 20);
             this.txtDescricao.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(164, 113);
+            this.label4.Location = new System.Drawing.Point(123, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 13);
             this.label4.TabIndex = 4;
@@ -263,14 +272,14 @@
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(167, 128);
+            this.txtData.Location = new System.Drawing.Point(126, 145);
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(113, 20);
             this.txtData.TabIndex = 5;
             // 
             // txtValorRecibo
             // 
-            this.txtValorRecibo.Location = new System.Drawing.Point(9, 128);
+            this.txtValorRecibo.Location = new System.Drawing.Point(9, 145);
             this.txtValorRecibo.Name = "txtValorRecibo";
             this.txtValorRecibo.Size = new System.Drawing.Size(81, 20);
             this.txtValorRecibo.TabIndex = 6;
@@ -278,7 +287,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 112);
+            this.label5.Location = new System.Drawing.Point(6, 129);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 13);
             this.label5.TabIndex = 7;
@@ -286,7 +295,7 @@
             // 
             // txtIdCliente
             // 
-            this.txtIdCliente.Location = new System.Drawing.Point(96, 128);
+            this.txtIdCliente.Location = new System.Drawing.Point(275, 145);
             this.txtIdCliente.Name = "txtIdCliente";
             this.txtIdCliente.Size = new System.Drawing.Size(65, 20);
             this.txtIdCliente.TabIndex = 8;
@@ -294,7 +303,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(93, 112);
+            this.label7.Location = new System.Drawing.Point(272, 129);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 13);
             this.label7.TabIndex = 9;
@@ -340,12 +349,21 @@
             this.Valor.ReadOnly = true;
             this.Valor.Width = 70;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Codigo:";
+            // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(747, 427);
+            this.ClientSize = new System.Drawing.Size(570, 459);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnListar);
@@ -395,5 +413,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSenha;
         private System.Windows.Forms.DataGridViewTextBoxColumn clienteNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
+        private System.Windows.Forms.Label label8;
     }
 }

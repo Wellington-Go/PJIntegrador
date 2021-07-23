@@ -59,7 +59,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.txtTelefone);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.txtNome);
@@ -143,6 +143,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(82, 20);
@@ -156,7 +157,8 @@
             // 
             // btnListar
             // 
-            this.btnListar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnListar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnListar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListar.Location = new System.Drawing.Point(185, 12);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(96, 23);
@@ -295,6 +297,7 @@
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
