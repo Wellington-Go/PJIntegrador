@@ -39,11 +39,6 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvServicos = new System.Windows.Forms.DataGridView();
-            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnListar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -58,6 +53,11 @@
             this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.txtIdRecibo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -176,49 +176,9 @@
             this.dgvServicos.Name = "dgvServicos";
             this.dgvServicos.ReadOnly = true;
             this.dgvServicos.RowHeadersVisible = false;
-            this.dgvServicos.Size = new System.Drawing.Size(545, 214);
+            this.dgvServicos.Size = new System.Drawing.Size(567, 214);
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
-            // 
-            // dgvId
-            // 
-            this.dgvId.Frozen = true;
-            this.dgvId.HeaderText = "Codigo";
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
-            this.dgvId.Width = 50;
-            // 
-            // clnNome
-            // 
-            this.clnNome.Frozen = true;
-            this.clnNome.HeaderText = "Descrição do serviço";
-            this.clnNome.Name = "clnNome";
-            this.clnNome.ReadOnly = true;
-            this.clnNome.Width = 250;
-            // 
-            // clnSenha
-            // 
-            this.clnSenha.Frozen = true;
-            this.clnSenha.HeaderText = "Data";
-            this.clnSenha.Name = "clnSenha";
-            this.clnSenha.ReadOnly = true;
-            this.clnSenha.Width = 120;
-            // 
-            // clienteNome
-            // 
-            this.clienteNome.Frozen = true;
-            this.clienteNome.HeaderText = "Cliente";
-            this.clienteNome.Name = "clienteNome";
-            this.clienteNome.ReadOnly = true;
-            this.clienteNome.Width = 60;
-            // 
-            // Valor
-            // 
-            this.Valor.Frozen = true;
-            this.Valor.HeaderText = "valor R$";
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
-            this.Valor.Width = 70;
             // 
             // btnListar
             // 
@@ -256,7 +216,7 @@
             this.groupBox2.Controls.Add(this.txtIdCliente);
             this.groupBox2.Controls.Add(this.txtIdRecibo);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(209, 261);
+            this.groupBox2.Location = new System.Drawing.Point(231, 261);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(349, 191);
             this.groupBox2.TabIndex = 23;
@@ -332,7 +292,7 @@
             // 
             this.txtDescricao.Location = new System.Drawing.Point(9, 96);
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(329, 20);
+            this.txtDescricao.Size = new System.Drawing.Size(331, 20);
             this.txtDescricao.TabIndex = 3;
             // 
             // txtIdCliente
@@ -358,12 +318,52 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Descrição do pedido:";
             // 
+            // dgvId
+            // 
+            this.dgvId.Frozen = true;
+            this.dgvId.HeaderText = "Codigo";
+            this.dgvId.Name = "dgvId";
+            this.dgvId.ReadOnly = true;
+            this.dgvId.Width = 50;
+            // 
+            // clnNome
+            // 
+            this.clnNome.Frozen = true;
+            this.clnNome.HeaderText = "Descrição do serviço";
+            this.clnNome.Name = "clnNome";
+            this.clnNome.ReadOnly = true;
+            this.clnNome.Width = 250;
+            // 
+            // clnSenha
+            // 
+            this.clnSenha.Frozen = true;
+            this.clnSenha.HeaderText = "Data";
+            this.clnSenha.Name = "clnSenha";
+            this.clnSenha.ReadOnly = true;
+            this.clnSenha.Width = 120;
+            // 
+            // clienteNome
+            // 
+            this.clienteNome.Frozen = true;
+            this.clienteNome.HeaderText = "Cliente";
+            this.clienteNome.Name = "clienteNome";
+            this.clienteNome.ReadOnly = true;
+            this.clienteNome.Width = 60;
+            // 
+            // Valor
+            // 
+            this.Valor.Frozen = true;
+            this.Valor.HeaderText = "valor R$";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
+            this.Valor.Width = 90;
+            // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(570, 459);
+            this.ClientSize = new System.Drawing.Size(592, 459);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnListar);
@@ -408,11 +408,11 @@
         private System.Windows.Forms.TextBox txtIdRecibo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSenha;
         private System.Windows.Forms.DataGridViewTextBoxColumn clienteNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
-        private System.Windows.Forms.Label label8;
     }
 }
