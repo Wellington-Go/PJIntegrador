@@ -65,7 +65,7 @@
             this.bntLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bntLogin.Location = new System.Drawing.Point(36, 113);
             this.bntLogin.Name = "bntLogin";
-            this.bntLogin.Size = new System.Drawing.Size(70, 34);
+            this.bntLogin.Size = new System.Drawing.Size(73, 34);
             this.bntLogin.TabIndex = 6;
             this.bntLogin.Text = "Login";
             this.bntLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

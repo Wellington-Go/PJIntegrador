@@ -39,25 +39,25 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvServicos = new System.Windows.Forms.DataGridView();
-            this.btnListar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtIdRecibo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtData = new System.Windows.Forms.TextBox();
-            this.txtValorRecibo = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtIdCliente = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.txtValorRecibo = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.txtIdRecibo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -180,6 +180,46 @@
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
             // 
+            // dgvId
+            // 
+            this.dgvId.Frozen = true;
+            this.dgvId.HeaderText = "Codigo";
+            this.dgvId.Name = "dgvId";
+            this.dgvId.ReadOnly = true;
+            this.dgvId.Width = 50;
+            // 
+            // clnNome
+            // 
+            this.clnNome.Frozen = true;
+            this.clnNome.HeaderText = "Descrição do serviço";
+            this.clnNome.Name = "clnNome";
+            this.clnNome.ReadOnly = true;
+            this.clnNome.Width = 250;
+            // 
+            // clnSenha
+            // 
+            this.clnSenha.Frozen = true;
+            this.clnSenha.HeaderText = "Data";
+            this.clnSenha.Name = "clnSenha";
+            this.clnSenha.ReadOnly = true;
+            this.clnSenha.Width = 120;
+            // 
+            // clienteNome
+            // 
+            this.clienteNome.Frozen = true;
+            this.clienteNome.HeaderText = "Cliente";
+            this.clienteNome.Name = "clienteNome";
+            this.clienteNome.ReadOnly = true;
+            this.clienteNome.Width = 60;
+            // 
+            // Valor
+            // 
+            this.Valor.Frozen = true;
+            this.Valor.HeaderText = "valor R$";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
+            this.Valor.Width = 70;
+            // 
             // btnListar
             // 
             this.btnListar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -223,6 +263,56 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Recibo do pedido:";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Codigo:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Valor R$";
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(126, 145);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(113, 20);
+            this.txtData.TabIndex = 5;
+            // 
+            // txtValorRecibo
+            // 
+            this.txtValorRecibo.Location = new System.Drawing.Point(9, 145);
+            this.txtValorRecibo.Name = "txtValorRecibo";
+            this.txtValorRecibo.Size = new System.Drawing.Size(81, 20);
+            this.txtValorRecibo.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(272, 129);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "ID do cliente:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(123, 129);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(116, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Data e hora do pedido:";
+            // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -237,6 +327,20 @@
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(9, 96);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(329, 20);
+            this.txtDescricao.TabIndex = 3;
+            // 
+            // txtIdCliente
+            // 
+            this.txtIdCliente.Location = new System.Drawing.Point(275, 145);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(65, 20);
+            this.txtIdCliente.TabIndex = 8;
             // 
             // txtIdRecibo
             // 
@@ -253,110 +357,6 @@
             this.label3.Size = new System.Drawing.Size(108, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Descrição do pedido:";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(9, 96);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(329, 20);
-            this.txtDescricao.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(123, 129);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Data e hora do pedido:";
-            // 
-            // txtData
-            // 
-            this.txtData.Location = new System.Drawing.Point(126, 145);
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(113, 20);
-            this.txtData.TabIndex = 5;
-            // 
-            // txtValorRecibo
-            // 
-            this.txtValorRecibo.Location = new System.Drawing.Point(9, 145);
-            this.txtValorRecibo.Name = "txtValorRecibo";
-            this.txtValorRecibo.Size = new System.Drawing.Size(81, 20);
-            this.txtValorRecibo.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 129);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Valor do pedido:";
-            // 
-            // txtIdCliente
-            // 
-            this.txtIdCliente.Location = new System.Drawing.Point(275, 145);
-            this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(65, 20);
-            this.txtIdCliente.TabIndex = 8;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(272, 129);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "ID do cliente:";
-            // 
-            // dgvId
-            // 
-            this.dgvId.Frozen = true;
-            this.dgvId.HeaderText = "Codigo";
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
-            this.dgvId.Width = 50;
-            // 
-            // clnNome
-            // 
-            this.clnNome.Frozen = true;
-            this.clnNome.HeaderText = "Descrição do serviço";
-            this.clnNome.Name = "clnNome";
-            this.clnNome.ReadOnly = true;
-            this.clnNome.Width = 250;
-            // 
-            // clnSenha
-            // 
-            this.clnSenha.Frozen = true;
-            this.clnSenha.HeaderText = "Data";
-            this.clnSenha.Name = "clnSenha";
-            this.clnSenha.ReadOnly = true;
-            this.clnSenha.Width = 120;
-            // 
-            // clienteNome
-            // 
-            this.clienteNome.Frozen = true;
-            this.clienteNome.HeaderText = "Cliente";
-            this.clienteNome.Name = "clienteNome";
-            this.clienteNome.ReadOnly = true;
-            this.clienteNome.Width = 60;
-            // 
-            // Valor
-            // 
-            this.Valor.Frozen = true;
-            this.Valor.HeaderText = "valor R$";
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
-            this.Valor.Width = 70;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 31);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Codigo:";
             // 
             // frmServicos
             // 
