@@ -58,7 +58,7 @@
             // 
             // bntLogin
             // 
-            this.bntLogin.BackColor = System.Drawing.Color.DarkBlue;
+            this.bntLogin.BackColor = System.Drawing.Color.Blue;
             this.bntLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntLogin.ForeColor = System.Drawing.Color.Snow;
             this.bntLogin.Image = ((System.Drawing.Image)(resources.GetObject("bntLogin.Image")));
@@ -113,7 +113,7 @@
             // 
             // bntCadastro
             // 
-            this.bntCadastro.BackColor = System.Drawing.Color.DarkBlue;
+            this.bntCadastro.BackColor = System.Drawing.Color.Blue;
             this.bntCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntCadastro.ForeColor = System.Drawing.Color.Snow;
             this.bntCadastro.Image = ((System.Drawing.Image)(resources.GetObject("bntCadastro.Image")));
