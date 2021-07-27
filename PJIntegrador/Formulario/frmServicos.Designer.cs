@@ -176,7 +176,7 @@
             this.dgvServicos.Name = "dgvServicos";
             this.dgvServicos.ReadOnly = true;
             this.dgvServicos.RowHeadersVisible = false;
-            this.dgvServicos.Size = new System.Drawing.Size(567, 214);
+            this.dgvServicos.Size = new System.Drawing.Size(546, 214);
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
             // 
@@ -216,7 +216,7 @@
             this.groupBox2.Controls.Add(this.txtIdCliente);
             this.groupBox2.Controls.Add(this.txtIdRecibo);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(231, 261);
+            this.groupBox2.Location = new System.Drawing.Point(210, 261);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(349, 191);
             this.groupBox2.TabIndex = 23;
@@ -348,7 +348,7 @@
             this.clienteNome.HeaderText = "Cliente";
             this.clienteNome.Name = "clienteNome";
             this.clienteNome.ReadOnly = true;
-            this.clienteNome.Width = 60;
+            this.clienteNome.Width = 50;
             // 
             // Valor
             // 
@@ -356,14 +356,14 @@
             this.Valor.HeaderText = "valor R$";
             this.Valor.Name = "Valor";
             this.Valor.ReadOnly = true;
-            this.Valor.Width = 90;
+            this.Valor.Width = 80;
             // 
             // frmServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(592, 459);
+            this.ClientSize = new System.Drawing.Size(569, 459);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnListar);
