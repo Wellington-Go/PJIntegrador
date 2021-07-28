@@ -337,7 +337,7 @@
             // clnSenha
             // 
             this.clnSenha.Frozen = true;
-            this.clnSenha.HeaderText = "Data";
+            this.clnSenha.HeaderText = "Data e hora";
             this.clnSenha.Name = "clnSenha";
             this.clnSenha.ReadOnly = true;
             this.clnSenha.Width = 120;
@@ -353,7 +353,7 @@
             // Valor
             // 
             this.Valor.Frozen = true;
-            this.Valor.HeaderText = "valor R$";
+            this.Valor.HeaderText = "Valor R$";
             this.Valor.Name = "Valor";
             this.Valor.ReadOnly = true;
             this.Valor.Width = 80;

@@ -41,6 +41,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.dgvEndereco = new System.Windows.Forms.DataGridView();
+            this.clnTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnDadosEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,10 +52,6 @@
             this.clnTeleone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgvEndereco = new System.Windows.Forms.DataGridView();
-            this.clnTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnCep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnDadosEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEndereco)).BeginInit();
@@ -191,62 +191,6 @@
             this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             this.dgvClientes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvClientes_KeyDown);
             // 
-            // clnId
-            // 
-            this.clnId.Frozen = true;
-            this.clnId.HeaderText = "ID";
-            this.clnId.Name = "clnId";
-            this.clnId.ReadOnly = true;
-            this.clnId.Width = 40;
-            // 
-            // clnNome
-            // 
-            this.clnNome.Frozen = true;
-            this.clnNome.HeaderText = "Nome";
-            this.clnNome.Name = "clnNome";
-            this.clnNome.ReadOnly = true;
-            this.clnNome.Width = 200;
-            // 
-            // clnCpf
-            // 
-            this.clnCpf.Frozen = true;
-            this.clnCpf.HeaderText = "CPF";
-            this.clnCpf.Name = "clnCpf";
-            this.clnCpf.ReadOnly = true;
-            this.clnCpf.Width = 90;
-            // 
-            // clnEmail
-            // 
-            this.clnEmail.Frozen = true;
-            this.clnEmail.HeaderText = "Email";
-            this.clnEmail.Name = "clnEmail";
-            this.clnEmail.ReadOnly = true;
-            this.clnEmail.Width = 140;
-            // 
-            // clnTeleone
-            // 
-            this.clnTeleone.Frozen = true;
-            this.clnTeleone.HeaderText = "Telefone";
-            this.clnTeleone.Name = "clnTeleone";
-            this.clnTeleone.ReadOnly = true;
-            this.clnTeleone.Width = 90;
-            // 
-            // Senha
-            // 
-            this.Senha.Frozen = true;
-            this.Senha.HeaderText = "Senha";
-            this.Senha.Name = "Senha";
-            this.Senha.ReadOnly = true;
-            this.Senha.Width = 70;
-            // 
-            // clnAtivo
-            // 
-            this.clnAtivo.Frozen = true;
-            this.clnAtivo.HeaderText = "Ativo";
-            this.clnAtivo.Name = "clnAtivo";
-            this.clnAtivo.ReadOnly = true;
-            this.clnAtivo.Width = 40;
-            // 
             // dgvEndereco
             // 
             this.dgvEndereco.AllowUserToAddRows = false;
@@ -287,6 +231,62 @@
             this.clnDadosEndereco.ReadOnly = true;
             this.clnDadosEndereco.Width = 500;
             // 
+            // clnId
+            // 
+            this.clnId.Frozen = true;
+            this.clnId.HeaderText = "ID";
+            this.clnId.Name = "clnId";
+            this.clnId.ReadOnly = true;
+            this.clnId.Width = 40;
+            // 
+            // clnNome
+            // 
+            this.clnNome.Frozen = true;
+            this.clnNome.HeaderText = "Nome";
+            this.clnNome.Name = "clnNome";
+            this.clnNome.ReadOnly = true;
+            this.clnNome.Width = 200;
+            // 
+            // clnCpf
+            // 
+            this.clnCpf.Frozen = true;
+            this.clnCpf.HeaderText = "CPF";
+            this.clnCpf.Name = "clnCpf";
+            this.clnCpf.ReadOnly = true;
+            this.clnCpf.Width = 90;
+            // 
+            // clnEmail
+            // 
+            this.clnEmail.Frozen = true;
+            this.clnEmail.HeaderText = "E-mail";
+            this.clnEmail.Name = "clnEmail";
+            this.clnEmail.ReadOnly = true;
+            this.clnEmail.Width = 140;
+            // 
+            // clnTeleone
+            // 
+            this.clnTeleone.Frozen = true;
+            this.clnTeleone.HeaderText = "Telefone";
+            this.clnTeleone.Name = "clnTeleone";
+            this.clnTeleone.ReadOnly = true;
+            this.clnTeleone.Width = 90;
+            // 
+            // Senha
+            // 
+            this.Senha.Frozen = true;
+            this.Senha.HeaderText = "Senha";
+            this.Senha.Name = "Senha";
+            this.Senha.ReadOnly = true;
+            this.Senha.Width = 70;
+            // 
+            // clnAtivo
+            // 
+            this.clnAtivo.Frozen = true;
+            this.clnAtivo.HeaderText = "Ativo";
+            this.clnAtivo.Name = "clnAtivo";
+            this.clnAtivo.ReadOnly = true;
+            this.clnAtivo.Width = 40;
+            // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,6 +323,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.DataGridView dgvEndereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnTipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnCep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clnDadosEndereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCpf;
@@ -330,9 +334,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnTeleone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Senha;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clnAtivo;
-        private System.Windows.Forms.DataGridView dgvEndereco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnTipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnCep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnDadosEndereco;
     }
 }
