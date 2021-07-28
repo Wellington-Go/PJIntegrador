@@ -42,10 +42,8 @@ namespace PJIntegrador
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
-            // The password character is an asterisk.
-            txtSenha.PasswordChar = '*';
-            // The control will allow no more than 14 characters.
-            txtSenha.MaxLength = 14;
+            txtSenha.PasswordChar = '*'; // The password character is an asterisk.
+            txtSenha.MaxLength = 14; // The control will allow no more than 14 characters.
         }
     }
 }

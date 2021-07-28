@@ -22,8 +22,6 @@ namespace PJIntegrador
                 txtSenha.Text
             );
             form.Inserir();
-
-            
             MessageBox.Show("Funcionario com id: "+form.Id+" inserido!","Projeto integrador", MessageBoxButtons.OK, MessageBoxIcon.Information);
             LimparCampos();
         }
