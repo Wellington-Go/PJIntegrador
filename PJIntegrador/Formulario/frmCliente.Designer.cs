@@ -142,8 +142,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(89)))), ((int)(((byte)(193)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(82, 20);
@@ -157,8 +158,9 @@
             // 
             // btnListar
             // 
-            this.btnListar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(89)))), ((int)(((byte)(193)))));
             this.btnListar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnListar.Location = new System.Drawing.Point(185, 12);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(96, 23);

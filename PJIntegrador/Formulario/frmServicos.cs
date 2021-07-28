@@ -42,7 +42,6 @@ namespace PJIntegrador.Formulario
             //while (ds.Read())
             //{
             //    cmbIdCliente.Items.Add(ds.GetInt32(1));
-
             //}
         }
 
@@ -63,7 +62,6 @@ namespace PJIntegrador.Formulario
             }
         }
 
-        
         private void btnEditarAlterar_Click(object sender, EventArgs e)
         {
             Servicos servicos = new Servicos();

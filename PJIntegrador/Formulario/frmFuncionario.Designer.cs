@@ -76,8 +76,9 @@
             // 
             // btnInserir
             // 
-            this.btnInserir.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnInserir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(89)))), ((int)(((byte)(193)))));
             this.btnInserir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInserir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInserir.Image = ((System.Drawing.Image)(resources.GetObject("btnInserir.Image")));
             this.btnInserir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInserir.Location = new System.Drawing.Point(9, 75);

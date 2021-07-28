@@ -58,9 +58,9 @@
             // 
             // bntLogin
             // 
-            this.bntLogin.BackColor = System.Drawing.Color.Blue;
+            this.bntLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(89)))), ((int)(((byte)(193)))));
             this.bntLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bntLogin.ForeColor = System.Drawing.Color.Snow;
+            this.bntLogin.ForeColor = System.Drawing.Color.White;
             this.bntLogin.Image = ((System.Drawing.Image)(resources.GetObject("bntLogin.Image")));
             this.bntLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bntLogin.Location = new System.Drawing.Point(36, 113);
@@ -75,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 30);
             this.label2.Name = "label2";
@@ -86,7 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 73);
             this.label3.Name = "label3";
@@ -113,9 +113,9 @@
             // 
             // bntCadastro
             // 
-            this.bntCadastro.BackColor = System.Drawing.Color.Blue;
+            this.bntCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(89)))), ((int)(((byte)(193)))));
             this.bntCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bntCadastro.ForeColor = System.Drawing.Color.Snow;
+            this.bntCadastro.ForeColor = System.Drawing.Color.White;
             this.bntCadastro.Image = ((System.Drawing.Image)(resources.GetObject("bntCadastro.Image")));
             this.bntCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bntCadastro.Location = new System.Drawing.Point(141, 113);
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(299, 180);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
