@@ -74,7 +74,7 @@ namespace PJIntegrador.classes
             var dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
-                msg = "Seja bem vindo ao sistema";
+                msg = "Seja bem vindo ao sistema!";
                 frmServicos app = new frmServicos();
                 app.Show();
                 Principal login = new Principal();

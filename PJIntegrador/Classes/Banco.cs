@@ -27,11 +27,9 @@ namespace PJIntegrador.classes
             }
             catch (Exception)
             {
-
                 throw;
             }
             return cmd;
-            
         }
     }
 }
