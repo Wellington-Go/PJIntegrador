@@ -41,10 +41,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.dgvEndereco = new System.Windows.Forms.DataGridView();
-            this.clnTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnCep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnDadosEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnCpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +48,10 @@
             this.clnTeleone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnAtivo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgvEndereco = new System.Windows.Forms.DataGridView();
+            this.clnTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnDadosEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEndereco)).BeginInit();
@@ -173,6 +173,7 @@
             // 
             this.dgvClientes.AllowUserToAddRows = false;
             this.dgvClientes.AllowUserToDeleteRows = false;
+            this.dgvClientes.BackgroundColor = System.Drawing.Color.Gray;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clnId,
@@ -182,6 +183,7 @@
             this.clnTeleone,
             this.Senha,
             this.clnAtivo});
+            this.dgvClientes.GridColor = System.Drawing.SystemColors.ButtonShadow;
             this.dgvClientes.Location = new System.Drawing.Point(185, 41);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
@@ -192,46 +194,6 @@
             this.dgvClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellClick);
             this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             this.dgvClientes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvClientes_KeyDown);
-            // 
-            // dgvEndereco
-            // 
-            this.dgvEndereco.AllowUserToAddRows = false;
-            this.dgvEndereco.AllowUserToDeleteRows = false;
-            this.dgvEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clnTipo,
-            this.clnCep,
-            this.clnDadosEndereco});
-            this.dgvEndereco.Location = new System.Drawing.Point(185, 305);
-            this.dgvEndereco.Name = "dgvEndereco";
-            this.dgvEndereco.ReadOnly = true;
-            this.dgvEndereco.RowHeadersVisible = false;
-            this.dgvEndereco.Size = new System.Drawing.Size(672, 45);
-            this.dgvEndereco.TabIndex = 18;
-            this.dgvEndereco.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEndereco_CellContentClick);
-            // 
-            // clnTipo
-            // 
-            this.clnTipo.Frozen = true;
-            this.clnTipo.HeaderText = "Tipo";
-            this.clnTipo.Name = "clnTipo";
-            this.clnTipo.ReadOnly = true;
-            this.clnTipo.Width = 80;
-            // 
-            // clnCep
-            // 
-            this.clnCep.Frozen = true;
-            this.clnCep.HeaderText = "CEP";
-            this.clnCep.Name = "clnCep";
-            this.clnCep.ReadOnly = true;
-            // 
-            // clnDadosEndereco
-            // 
-            this.clnDadosEndereco.Frozen = true;
-            this.clnDadosEndereco.HeaderText = "Endereço";
-            this.clnDadosEndereco.Name = "clnDadosEndereco";
-            this.clnDadosEndereco.ReadOnly = true;
-            this.clnDadosEndereco.Width = 500;
             // 
             // clnId
             // 
@@ -288,6 +250,46 @@
             this.clnAtivo.Name = "clnAtivo";
             this.clnAtivo.ReadOnly = true;
             this.clnAtivo.Width = 40;
+            // 
+            // dgvEndereco
+            // 
+            this.dgvEndereco.AllowUserToAddRows = false;
+            this.dgvEndereco.AllowUserToDeleteRows = false;
+            this.dgvEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnTipo,
+            this.clnCep,
+            this.clnDadosEndereco});
+            this.dgvEndereco.Location = new System.Drawing.Point(185, 305);
+            this.dgvEndereco.Name = "dgvEndereco";
+            this.dgvEndereco.ReadOnly = true;
+            this.dgvEndereco.RowHeadersVisible = false;
+            this.dgvEndereco.Size = new System.Drawing.Size(672, 45);
+            this.dgvEndereco.TabIndex = 18;
+            this.dgvEndereco.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEndereco_CellContentClick);
+            // 
+            // clnTipo
+            // 
+            this.clnTipo.Frozen = true;
+            this.clnTipo.HeaderText = "Tipo";
+            this.clnTipo.Name = "clnTipo";
+            this.clnTipo.ReadOnly = true;
+            this.clnTipo.Width = 80;
+            // 
+            // clnCep
+            // 
+            this.clnCep.Frozen = true;
+            this.clnCep.HeaderText = "CEP";
+            this.clnCep.Name = "clnCep";
+            this.clnCep.ReadOnly = true;
+            // 
+            // clnDadosEndereco
+            // 
+            this.clnDadosEndereco.Frozen = true;
+            this.clnDadosEndereco.HeaderText = "Endereço";
+            this.clnDadosEndereco.Name = "clnDadosEndereco";
+            this.clnDadosEndereco.ReadOnly = true;
+            this.clnDadosEndereco.Width = 500;
             // 
             // frmCliente
             // 

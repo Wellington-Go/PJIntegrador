@@ -14,8 +14,8 @@ namespace PJIntegrador.classes
         public static MySqlCommand Abrir()
         {
             MySqlCommand cmd = new MySqlCommand();
-            string strConn = @"server=127.0.0.1; database=bancopi; user id=root; password=usbw; port=3307";
-            //string strConn = @"localhost; database=bancopi; user id=root; password=usbw; port=3306";
+            //string strConn = @"server=127.0.0.1; database=bancopi; user id=root; password=''; port=3306";
+            string strConn = @"server=localhost; database=bancopi; user=root; password=''; port=3306";
             MySqlConnection cn = new MySqlConnection(strConn);
             try // tratamento de exceções do C#
             {
