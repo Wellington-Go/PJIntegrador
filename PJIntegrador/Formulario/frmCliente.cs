@@ -21,18 +21,25 @@ namespace PJIntegrador.Formulario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtNome.Focus();
-            Cliente cliente = new Cliente();
-            cliente.BuscarPorId(int.Parse(txtId.Text));
-            if (cliente.Id > 0)
+            if (txtId.Text == string.Empty)
             {
-                txtNome.Text = cliente.Nome;
-                txtEmail.Text = cliente.Email;
-                txtTelefone.Text = cliente.Telefone;
+                MessageBox.Show("É obrgatório preencher o campo!", "Projeto integrador!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Cliente não encontrado, verifique a listade clientes!");
+                txtNome.Focus();
+                Cliente cliente = new Cliente();
+                cliente.BuscarPorId(int.Parse(txtId.Text));
+                if (cliente.Id > 0)
+                {
+                    txtNome.Text = cliente.Nome;
+                    txtEmail.Text = cliente.Email;
+                    txtTelefone.Text = cliente.Telefone;
+                }
+                else
+                {
+                    MessageBox.Show("Cliente não encontrado, verifique a listade clientes!");
+                }
             }
         }
 

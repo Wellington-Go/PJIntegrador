@@ -39,6 +39,11 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvServicos = new System.Windows.Forms.DataGridView();
+            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnListar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -53,11 +58,6 @@
             this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.txtIdRecibo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicos)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -182,6 +182,46 @@
             this.dgvServicos.TabIndex = 20;
             this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
             // 
+            // dgvId
+            // 
+            this.dgvId.Frozen = true;
+            this.dgvId.HeaderText = "Codigo";
+            this.dgvId.Name = "dgvId";
+            this.dgvId.ReadOnly = true;
+            this.dgvId.Width = 50;
+            // 
+            // clnNome
+            // 
+            this.clnNome.Frozen = true;
+            this.clnNome.HeaderText = "Descrição do serviço";
+            this.clnNome.Name = "clnNome";
+            this.clnNome.ReadOnly = true;
+            this.clnNome.Width = 250;
+            // 
+            // clnSenha
+            // 
+            this.clnSenha.Frozen = true;
+            this.clnSenha.HeaderText = "Data e hora";
+            this.clnSenha.Name = "clnSenha";
+            this.clnSenha.ReadOnly = true;
+            this.clnSenha.Width = 120;
+            // 
+            // clienteNome
+            // 
+            this.clienteNome.Frozen = true;
+            this.clienteNome.HeaderText = "Cliente";
+            this.clienteNome.Name = "clienteNome";
+            this.clienteNome.ReadOnly = true;
+            this.clienteNome.Width = 50;
+            // 
+            // Valor
+            // 
+            this.Valor.Frozen = true;
+            this.Valor.HeaderText = "Valor R$";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
+            this.Valor.Width = 80;
+            // 
             // btnListar
             // 
             this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(89)))), ((int)(((byte)(193)))));
@@ -237,6 +277,7 @@
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 10;
             this.label8.Text = "Codigo:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label5
             // 
@@ -324,46 +365,6 @@
             this.label3.Size = new System.Drawing.Size(108, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Descrição do pedido:";
-            // 
-            // dgvId
-            // 
-            this.dgvId.Frozen = true;
-            this.dgvId.HeaderText = "Codigo";
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
-            this.dgvId.Width = 50;
-            // 
-            // clnNome
-            // 
-            this.clnNome.Frozen = true;
-            this.clnNome.HeaderText = "Descrição do serviço";
-            this.clnNome.Name = "clnNome";
-            this.clnNome.ReadOnly = true;
-            this.clnNome.Width = 250;
-            // 
-            // clnSenha
-            // 
-            this.clnSenha.Frozen = true;
-            this.clnSenha.HeaderText = "Data e hora";
-            this.clnSenha.Name = "clnSenha";
-            this.clnSenha.ReadOnly = true;
-            this.clnSenha.Width = 120;
-            // 
-            // clienteNome
-            // 
-            this.clienteNome.Frozen = true;
-            this.clienteNome.HeaderText = "Cliente";
-            this.clienteNome.Name = "clienteNome";
-            this.clienteNome.ReadOnly = true;
-            this.clienteNome.Width = 50;
-            // 
-            // Valor
-            // 
-            this.Valor.Frozen = true;
-            this.Valor.HeaderText = "Valor R$";
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
-            this.Valor.Width = 80;
             // 
             // frmServicos
             // 

@@ -97,18 +97,23 @@ namespace PJIntegrador.Formulario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtId.ReadOnly = false;
-            DesbloquearControles();
-            Servicos servicos = new Servicos();
-            servicos.BuscarPorId(int.Parse(txtId.Text));
-            if (servicos.ID > 0)
+            if (txtId.Text == string.Empty)
             {
-                cmbIdCliente.Text = Convert.ToString(servicos.IdCliente);
-                txtValor.Text = Convert.ToString(servicos.Valor);
-            }
-            else
-            {
-                MessageBox.Show("Serviço não encontrado, verifique a lista de serviços!");
+                MessageBox.Show("É obrgatório preencher o campo!", "Projeto integrador!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } else {
+                txtId.ReadOnly = false;
+                DesbloquearControles();
+                Servicos servicos = new Servicos();
+                servicos.BuscarPorId(int.Parse(txtId.Text));
+                if (servicos.ID > 0)
+                {
+                    cmbIdCliente.Text = Convert.ToString(servicos.IdCliente);
+                    txtValor.Text = Convert.ToString(servicos.Valor);
+                }
+                else
+                {
+                    MessageBox.Show("Serviço não encontrado, verifique a lista de serviços!");
+                }
             }
         }
 
@@ -127,19 +132,31 @@ namespace PJIntegrador.Formulario
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Servicos servicos = new Servicos();
-            servicos.BuscarPorId(int.Parse(txtIdRecibo.Text));
-            if (servicos.ID > 0)
+            if (txtId.Text == string.Empty)
             {
-                txtIdCliente.Text = Convert.ToString(servicos.IdCliente);
-                txtDescricao.Text = servicos.Descricao;
-                txtValorRecibo.Text = Convert.ToString(servicos.Valor);
-                txtData.Text = Convert.ToString(servicos.Data);
+                MessageBox.Show("É obrgatório preencher o campo!", "Projeto integrador!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Serviço não encontrado, verifique a lista de serviços!");
+                Servicos servicos = new Servicos();
+                servicos.BuscarPorId(int.Parse(txtIdRecibo.Text));
+                if (servicos.ID > 0)
+                {
+                    txtIdCliente.Text = Convert.ToString(servicos.IdCliente);
+                    txtDescricao.Text = servicos.Descricao;
+                    txtValorRecibo.Text = Convert.ToString(servicos.Valor);
+                    txtData.Text = Convert.ToString(servicos.Data);
+                }
+                else
+                {
+                    MessageBox.Show("Serviço não encontrado, verifique a lista de serviços!");
+                }
             }
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
