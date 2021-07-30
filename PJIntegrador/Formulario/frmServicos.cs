@@ -132,7 +132,7 @@ namespace PJIntegrador.Formulario
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            if (txtId.Text == string.Empty)
+            if (txtIdRecibo.Text == string.Empty)
             {
                 MessageBox.Show("É obrgatório preencher o campo!", "Projeto integrador!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
